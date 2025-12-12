@@ -25,28 +25,28 @@ export default function HomePage() {
       </div>
 
       {/* Product Carousel Section */}
-      <section className="py-20 overflow-hidden bg-gradient-to-br from-[#0A1F44] via-[#0A1F44] to-[#000000]">
+      <section className="py-16 overflow-hidden">
         <div className="flex animate-scroll-slow">
           {/* CIBIL Slide */}
-          <div className="flex-shrink-0 w-full">
+          <div className="flex-shrink-0 w-full bg-gradient-to-r from-[#01035B] to-[#006ACF] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white leading-tight">
+                  <h1 className="text-3xl sm:text-4xl font-bold mb-4">
                     Get your CIBIL Credit Report
                   </h1>
-                  <p className="text-2xl mb-3 text-white">
-                    worth <span className="text-[#F4D86B] font-bold">₹500 for FREE</span>
+                  <p className="text-xl mb-2">
+                    worth <span className="text-[#00BCD6] font-bold">₹500 for FREE</span>
                   </p>
-                  <p className="text-base mb-8 text-gray-300">
+                  <p className="text-sm mb-6 opacity-90">
                     5 Lac+ people have got their Credit Scores for FREE!
                   </p>
-                  <Button className="bg-[#F4D86B] hover:bg-[#FFB800] text-[#0A1F44] px-8 py-6 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                  <Button className="bg-[#00BCD6] hover:bg-[#00A5B8] text-[#01035B] px-6 py-3 font-semibold">
                     Get Free Credit Score
                   </Button>
                 </div>
                 
-                <div className="relative overflow-hidden rounded-2xl">
+                <div className="relative overflow-hidden rounded-xl">
                   <div className="flex animate-scroll">
                     {[
                       { score: "750+", status: "Excellent", color: "bg-green-500" },
@@ -56,13 +56,13 @@ export default function HomePage() {
                       { score: "750+", status: "Excellent", color: "bg-green-500" },
                       { score: "700-749", status: "Good", color: "bg-blue-500" }
                     ].map((item, index) => (
-                      <div key={index} className="flex-shrink-0 w-48 mx-2">
-                        <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/20">
-                          <div className={`w-20 h-20 ${item.color} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
-                            <span className="text-white font-bold text-base">{item.score}</span>
+                      <div key={`cibil-${index}`} className="flex-shrink-0 w-48 mx-2">
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                          <div className={`w-16 h-16 ${item.color} rounded-full flex items-center justify-center mx-auto mb-3`}>
+                            <span className="text-white font-bold text-sm">{item.score}</span>
                           </div>
-                          <h3 className="font-bold text-white text-lg">{item.status}</h3>
-                          <p className="text-sm text-white/90 mt-2">Credit Score Range</p>
+                          <h3 className="font-semibold text-white">{item.status}</h3>
+                          <p className="text-xs text-white/80 mt-1">Credit Score Range</p>
                         </div>
                       </div>
                     ))}
@@ -73,37 +73,37 @@ export default function HomePage() {
           </div>
           
           {/* Personal Loan Slide */}
-          <div className="flex-shrink-0 w-full">
+          <div className="flex-shrink-0 w-full bg-gradient-to-r from-[#00BCD6] to-[#006ACF] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="relative overflow-hidden rounded-2xl h-32">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-xl h-32">
                     {[
                       { amount: "₹5L", rate: "10.99%", tenure: "5 Years" },
                       { amount: "₹10L", rate: "11.49%", tenure: "7 Years" },
                       { amount: "₹20L", rate: "12.99%", tenure: "5 Years" },
                       { amount: "₹40L", rate: "13.99%", tenure: "7 Years" }
                     ].map((loan, index) => (
-                      <div key={index} className="animate-card-fade w-full">
-                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center border border-white/20">
-                          <h3 className="text-3xl font-bold text-white mb-3">{loan.amount}</h3>
-                          <p className="text-[#F4D86B] font-bold text-xl">{loan.rate} p.a.</p>
-                          <p className="text-sm text-white/90 mt-2">{loan.tenure} Max</p>
+                      <div key={`loan-${index}`} className="animate-card-fade w-full">
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                          <h3 className="text-2xl font-bold text-white mb-2">{loan.amount}</h3>
+                          <p className="text-[#01035B] font-semibold">{loan.rate} p.a.</p>
+                          <p className="text-xs text-white/80 mt-1">{loan.tenure} Max</p>
                         </div>
                       </div>
                     ))}
                 </div>
                 
                 <div>
-                  <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white leading-tight">
+                  <h1 className="text-3xl sm:text-4xl font-bold mb-4">
                     Personal Loans up to ₹40 Lakhs
                   </h1>
-                  <p className="text-2xl mb-3 text-white">
-                    Starting at <span className="text-[#F4D86B] font-bold">10.99% p.a.</span>
+                  <p className="text-xl mb-2">
+                    Starting at <span className="text-[#01035B] font-bold">10.99% p.a.</span>
                   </p>
-                  <p className="text-base mb-8 text-gray-300">
+                  <p className="text-sm mb-6 opacity-90">
                     Instant approval in 2 minutes. No collateral required!
                   </p>
-                  <Button className="bg-[#F4D86B] hover:bg-[#FFB800] text-[#0A1F44] px-8 py-6 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                  <Button className="bg-[#01035B] hover:bg-[#001B84] text-white px-6 py-3 font-semibold">
                     Apply for Personal Loan
                   </Button>
                 </div>
@@ -112,36 +112,36 @@ export default function HomePage() {
           </div>
           
           {/* Home Loan Slide */}
-          <div className="flex-shrink-0 w-full">
+          <div className="flex-shrink-0 w-full bg-gradient-to-r from-[#006ACF] to-[#01035B] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white leading-tight">
+                  <h1 className="text-3xl sm:text-4xl font-bold mb-4">
                     Home Loans up to ₹5 Crores
                   </h1>
-                  <p className="text-2xl mb-3 text-white">
-                    Starting at <span className="text-[#F4D86B] font-bold">8.50% p.a.</span>
+                  <p className="text-xl mb-2">
+                    Starting at <span className="text-[#00BCD6] font-bold">8.50% p.a.</span>
                   </p>
-                  <p className="text-base mb-8 text-gray-300">
+                  <p className="text-sm mb-6 opacity-90">
                     Make your dream home a reality with lowest rates!
                   </p>
-                  <Button className="bg-[#F4D86B] hover:bg-[#FFB800] text-[#0A1F44] px-8 py-6 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                  <Button className="bg-[#00BCD6] hover:bg-[#00A5B8] text-[#01035B] px-6 py-3 font-semibold">
                     Apply for Home Loan
                   </Button>
                 </div>
                 
-                <div className="relative overflow-hidden rounded-2xl h-32">
+                <div className="relative overflow-hidden rounded-xl h-32">
                     {[
                       { amount: "₹50L", rate: "8.50%", type: "Ready" },
                       { amount: "₹1Cr", rate: "8.75%", type: "Under Construction" },
                       { amount: "₹2Cr", rate: "9.00%", type: "Plot + Construction" },
                       { amount: "₹5Cr", rate: "9.25%", type: "Luxury Homes" }
                     ].map((home, index) => (
-                      <div key={index} className="animate-card-fade w-full">
-                        <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-center border border-white/20">
-                          <h3 className="text-3xl font-bold text-white mb-3">{home.amount}</h3>
-                          <p className="text-[#F4D86B] font-bold text-xl">{home.rate} p.a.</p>
-                          <p className="text-sm text-white/90 mt-2">{home.type}</p>
+                      <div key={`home-${index}`} className="animate-card-fade w-full">
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                          <h3 className="text-2xl font-bold text-white mb-2">{home.amount}</h3>
+                          <p className="text-[#00BCD6] font-semibold">{home.rate} p.a.</p>
+                          <p className="text-xs text-white/80 mt-1">{home.type}</p>
                         </div>
                       </div>
                     ))}
@@ -151,38 +151,38 @@ export default function HomePage() {
           </div>
           
           {/* Duplicate first slide for seamless loop */}
-          <div className="flex-shrink-0 w-full">
+          <div className="flex-shrink-0 w-full bg-gradient-to-r from-[#01035B] to-[#006ACF] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-white leading-tight">
+                  <h1 className="text-3xl sm:text-4xl font-bold mb-4">
                     Get your CIBIL Credit Report
                   </h1>
-                  <p className="text-2xl mb-3 text-white">
-                    worth <span className="text-[#F4D86B] font-bold">₹500 for FREE</span>
+                  <p className="text-xl mb-2">
+                    worth <span className="text-[#00BCD6] font-bold">₹500 for FREE</span>
                   </p>
-                  <p className="text-base mb-8 text-gray-300">
+                  <p className="text-sm mb-6 opacity-90">
                     5 Lac+ people have got their Credit Scores for FREE!
                   </p>
-                  <Button className="bg-[#F4D86B] hover:bg-[#FFB800] text-[#0A1F44] px-8 py-6 font-bold text-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all">
+                  <Button className="bg-[#00BCD6] hover:bg-[#00A5B8] text-[#01035B] px-6 py-3 font-semibold">
                     Get Free Credit Score
                   </Button>
                 </div>
                 
-                <div className="relative overflow-hidden rounded-2xl h-32">
+                <div className="relative overflow-hidden rounded-xl h-32">
                     {[
                       { score: "750+", status: "Excellent", color: "bg-green-500" },
                       { score: "700-749", status: "Good", color: "bg-blue-500" },
                       { score: "650-699", status: "Fair", color: "bg-yellow-500" },
                       { score: "600-649", status: "Poor", color: "bg-orange-500" }
                     ].map((item, index) => (
-                      <div key={index} className="animate-card-fade w-full">
-                        <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl text-center border border-white/20">
-                          <div className={`w-20 h-20 ${item.color} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
-                            <span className="text-white font-bold text-base">{item.score}</span>
+                      <div key={`cibil-loop-${index}`} className="animate-card-fade w-full">
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center">
+                          <div className={`w-16 h-16 ${item.color} rounded-full flex items-center justify-center mx-auto mb-3`}>
+                            <span className="text-white font-bold text-sm">{item.score}</span>
                           </div>
-                          <h3 className="font-bold text-white text-lg">{item.status}</h3>
-                          <p className="text-sm text-white/90 mt-2">Credit Score Range</p>
+                          <h3 className="font-semibold text-white">{item.status}</h3>
+                          <p className="text-xs text-white/80 mt-1">Credit Score Range</p>
                         </div>
                       </div>
                     ))}

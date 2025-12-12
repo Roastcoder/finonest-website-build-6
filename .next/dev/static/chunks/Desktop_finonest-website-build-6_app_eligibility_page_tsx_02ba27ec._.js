@@ -164,7 +164,7 @@ function EligibilityPage() {
         });
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-gradient-to-b from-[#f4f7fa] to-white pt-24 pb-16",
+        className: "min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",
             children: [
@@ -172,7 +172,7 @@ function EligibilityPage() {
                     className: "text-center mb-12",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                            className: "inline-block px-4 py-2 bg-[#12D6E7]/10 rounded-full text-[#008B96] text-sm font-medium mb-4",
+                            className: "inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4",
                             initial: {
                                 opacity: 0,
                                 y: 20
@@ -204,7 +204,7 @@ function EligibilityPage() {
                                 "Check Your",
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-transparent bg-clip-text bg-gradient-to-r from-[#0064D6] to-[#12D6E7]",
+                                    className: "text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]",
                                     children: "Loan Eligibility"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -261,7 +261,7 @@ function EligibilityPage() {
                                     className: "flex items-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            className: `flex items-center justify-center w-12 h-12 rounded-full border-2 transition-all ${currentStep >= step.id ? "bg-[#0064D6] border-[#0064D6] text-white" : "bg-white border-gray-200 text-gray-400"}`,
+                                            className: `flex items-center justify-center w-12 h-12 rounded-full border-2 transition-all ${currentStep >= step.id ? "bg-[#F4D86B] border-[#F4D86B] text-[#0A1F44]" : "bg-white border-gray-200 text-gray-400"}`,
                                             animate: {
                                                 scale: currentStep === step.id ? 1.1 : 1
                                             },
@@ -284,7 +284,7 @@ function EligibilityPage() {
                                             columnNumber: 19
                                         }, this),
                                         index < steps.length - 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `w-16 sm:w-24 h-1 mx-2 rounded-full transition-colors ${currentStep > step.id ? "bg-[#0064D6]" : "bg-gray-200"}`
+                                            className: `w-16 sm:w-24 h-1 mx-2 rounded-full transition-colors ${currentStep > step.id ? "bg-[#F4D86B]" : "bg-gray-200"}`
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
                                             lineNumber: 192,
@@ -358,7 +358,7 @@ function EligibilityPage() {
                                                                     type: "text",
                                                                     value: formData.name,
                                                                     onChange: (e)=>handleInputChange("name", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     placeholder: "Enter your full name"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -385,7 +385,7 @@ function EligibilityPage() {
                                                                     type: "number",
                                                                     value: formData.age,
                                                                     onChange: (e)=>handleInputChange("age", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     placeholder: "Your age"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -421,7 +421,7 @@ function EligibilityPage() {
                                                                     type: "email",
                                                                     value: formData.email,
                                                                     onChange: (e)=>handleInputChange("email", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     placeholder: "your@email.com"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -448,7 +448,7 @@ function EligibilityPage() {
                                                                     type: "tel",
                                                                     value: formData.phone,
                                                                     onChange: (e)=>handleInputChange("phone", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     placeholder: "+91 98765 43210"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -510,7 +510,7 @@ function EligibilityPage() {
                                                             className: "grid grid-cols-2 gap-4",
                                                             children: employmentTypes.map((type)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                                                     onClick: ()=>handleInputChange("employmentType", type.id),
-                                                                    className: `p-4 rounded-xl border-2 text-left transition-all ${formData.employmentType === type.id ? "border-[#0064D6] bg-[#0064D6]/5" : "border-gray-200 hover:border-gray-300"}`,
+                                                                    className: `p-4 rounded-2xl border-2 text-left transition-all ${formData.employmentType === type.id ? "border-[#F4D86B] bg-[#F4D86B]/5" : "border-gray-200 hover:border-gray-300"}`,
                                                                     whileHover: {
                                                                         scale: 1.02
                                                                     },
@@ -518,7 +518,7 @@ function EligibilityPage() {
                                                                         scale: 0.98
                                                                     },
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: `font-medium ${formData.employmentType === type.id ? "text-[#0064D6]" : "text-gray-700"}`,
+                                                                        className: `font-medium ${formData.employmentType === type.id ? "text-[#0A1F44]" : "text-gray-700"}`,
                                                                         children: type.label
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -555,7 +555,7 @@ function EligibilityPage() {
                                                             type: "number",
                                                             value: formData.monthlyIncome,
                                                             onChange: (e)=>handleInputChange("monthlyIncome", e.target.value),
-                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                             placeholder: "e.g., 50000"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -611,7 +611,7 @@ function EligibilityPage() {
                                                             type: "number",
                                                             value: formData.existingEMI,
                                                             onChange: (e)=>handleInputChange("existingEMI", e.target.value),
-                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                             placeholder: "Total of all existing EMIs"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -638,7 +638,7 @@ function EligibilityPage() {
                                                             type: "number",
                                                             value: formData.creditScore,
                                                             onChange: (e)=>handleInputChange("creditScore", e.target.value),
-                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                            className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                             placeholder: "e.g., 750"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -702,7 +702,7 @@ function EligibilityPage() {
                                                             className: "grid grid-cols-2 gap-4",
                                                             children: loanTypes.map((type)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                                                     onClick: ()=>handleInputChange("loanType", type.id),
-                                                                    className: `p-4 rounded-xl border-2 flex items-center gap-3 transition-all ${formData.loanType === type.id ? "border-[#0064D6] bg-[#0064D6]/5" : "border-gray-200 hover:border-gray-300"}`,
+                                                                    className: `p-4 rounded-xl border-2 flex items-center gap-3 transition-all ${formData.loanType === type.id ? "border-[#F4D86B] bg-[#F4D86B]/5" : "border-gray-200 hover:border-gray-300"}`,
                                                                     whileHover: {
                                                                         scale: 1.02
                                                                     },
@@ -711,14 +711,14 @@ function EligibilityPage() {
                                                                     },
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(type.icon, {
-                                                                            className: `w-5 h-5 ${formData.loanType === type.id ? "text-[#0064D6]" : "text-gray-400"}`
+                                                                            className: `w-5 h-5 ${formData.loanType === type.id ? "text-[#F4D86B]" : "text-gray-400"}`
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
                                                                             lineNumber: 382,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                            className: `font-medium ${formData.loanType === type.id ? "text-[#0064D6]" : "text-gray-700"}`,
+                                                                            className: `font-medium ${formData.loanType === type.id ? "text-[#F4D86B]" : "text-gray-700"}`,
                                                                             children: type.label
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -759,7 +759,7 @@ function EligibilityPage() {
                                                                     type: "number",
                                                                     value: formData.loanAmount,
                                                                     onChange: (e)=>handleInputChange("loanAmount", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     placeholder: "e.g., 500000"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -785,7 +785,7 @@ function EligibilityPage() {
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                                     value: formData.tenure,
                                                                     onChange: (e)=>handleInputChange("tenure", e.target.value),
-                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0064D6] focus:ring-2 focus:ring-[#0064D6]/20 outline-none transition-all",
+                                                                    className: "w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F4D86B] focus:ring-2 focus:ring-[#F4D86B]/20 outline-none transition-all",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                             value: "",
@@ -878,7 +878,7 @@ function EligibilityPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                             onClick: prevStep,
-                                            className: `flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-colors ${currentStep === 1 ? "text-gray-300 cursor-not-allowed" : "text-gray-600 hover:bg-gray-100"}`,
+                                            className: `flex items-center gap-2 px-6 py-3 rounded-2xl font-medium transition-colors ${currentStep === 1 ? "text-gray-300 cursor-not-allowed" : "text-gray-600 hover:bg-gray-100"}`,
                                             disabled: currentStep === 1,
                                             whileHover: currentStep > 1 ? {
                                                 scale: 1.02
@@ -903,7 +903,7 @@ function EligibilityPage() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                             onClick: nextStep,
-                                            className: "flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-xl font-semibold shadow-lg shadow-[#0064D6]/25",
+                                            className: "flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] rounded-2xl font-semibold shadow-lg shadow-[#F4D86B]/25",
                                             whileHover: {
                                                 scale: 1.02
                                             },
@@ -1011,7 +1011,7 @@ function EligibilityPage() {
                                 className: "grid sm:grid-cols-3 gap-6 mb-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "bg-gradient-to-br from-[#0064D6]/10 to-[#12D6E7]/10 rounded-2xl p-6",
+                                        className: "bg-gradient-to-br from-[#F4D86B]/10 to-[#F4D86B]/20 rounded-3xl p-6",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -1033,7 +1033,7 @@ function EligibilityPage() {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#0064D6]",
+                                                className: "text-3xl font-bold text-[#0A1F44]",
                                                 children: eligibilityResult.maxAmount
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -1047,7 +1047,7 @@ function EligibilityPage() {
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "bg-gradient-to-br from-[#12D6E7]/10 to-[#008B96]/10 rounded-2xl p-6",
+                                        className: "bg-gradient-to-br from-[#FFB800]/10 to-[#FFB800]/20 rounded-3xl p-6",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -1069,7 +1069,7 @@ function EligibilityPage() {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#008B96]",
+                                                className: "text-3xl font-bold text-[#FFB800]",
                                                 children: eligibilityResult.rate
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -1083,7 +1083,7 @@ function EligibilityPage() {
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "bg-gradient-to-br from-[#008B96]/10 to-[#002E9C]/10 rounded-2xl p-6",
+                                        className: "bg-gradient-to-br from-[#0A1F44]/10 to-[#0A1F44]/20 rounded-3xl p-6",
                                         initial: {
                                             opacity: 0,
                                             y: 20
@@ -1105,7 +1105,7 @@ function EligibilityPage() {
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#002E9C]",
+                                                className: "text-3xl font-bold text-[#0A1F44]",
                                                 children: eligibilityResult.emi
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/eligibility/page.tsx",
@@ -1130,7 +1130,7 @@ function EligibilityPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/contact",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            className: "flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-full font-semibold shadow-lg",
+                                            className: "flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] rounded-2xl font-semibold shadow-lg",
                                             whileHover: {
                                                 scale: 1.02
                                             },
@@ -1161,7 +1161,7 @@ function EligibilityPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                         onClick: resetForm,
-                                        className: "px-8 py-4 text-gray-600 hover:bg-gray-100 rounded-full font-medium transition-colors",
+                                        className: "px-8 py-4 text-gray-600 hover:bg-gray-100 rounded-2xl font-medium transition-colors",
                                         whileHover: {
                                             scale: 1.02
                                         },
@@ -1235,7 +1235,7 @@ function EligibilityPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/contact",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
-                                            className: "flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-full font-semibold shadow-lg",
+                                            className: "flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] rounded-2xl font-semibold shadow-lg",
                                             whileHover: {
                                                 scale: 1.02
                                             },
@@ -1264,7 +1264,7 @@ function EligibilityPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                         onClick: resetForm,
-                                        className: "px-8 py-4 text-gray-600 hover:bg-gray-100 rounded-full font-medium transition-colors",
+                                        className: "px-8 py-4 text-gray-600 hover:bg-gray-100 rounded-2xl font-medium transition-colors",
                                         whileHover: {
                                             scale: 1.02
                                         },

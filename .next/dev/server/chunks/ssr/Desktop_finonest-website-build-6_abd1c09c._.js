@@ -90,12 +90,12 @@ function HomePage() {
         className: "min-h-screen bg-white",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-[#00BCD6] text-[#01035B] py-2 overflow-hidden",
+                className: "bg-[#F4D86B] text-[#0A1F44] py-3 overflow-hidden",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "animate-scroll whitespace-nowrap",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "inline-block px-8 font-semibold",
+                            className: "inline-block px-8 font-bold text-sm",
                             children: "✨ 5 Lac+ Happy Customers ✨ Fast & Secure Process ✨ Multiple Bank Options ✨ Expert Support Available ✨ Transparent Pricing ✨ Quick Documentation ✨"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -103,7 +103,7 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "inline-block px-8 font-semibold",
+                            className: "inline-block px-8 font-bold text-sm",
                             children: "✨ 5 Lac+ Happy Customers ✨ Fast & Secure Process ✨ Multiple Bank Options ✨ Expert Support Available ✨ Transparent Pricing ✨ Quick Documentation ✨"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -260,7 +260,7 @@ function HomePage() {
                                                             lineNumber: 60,
                                                             columnNumber: 25
                                                         }, this)
-                                                    }, index, false, {
+                                                    }, `cibil-${index}`, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                         lineNumber: 59,
                                                         columnNumber: 23
@@ -362,7 +362,7 @@ function HomePage() {
                                                         lineNumber: 87,
                                                         columnNumber: 25
                                                     }, this)
-                                                }, index, false, {
+                                                }, `loan-${index}`, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                     lineNumber: 86,
                                                     columnNumber: 23
@@ -556,7 +556,7 @@ function HomePage() {
                                                         lineNumber: 141,
                                                         columnNumber: 25
                                                     }, this)
-                                                }, index, false, {
+                                                }, `home-${index}`, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                     lineNumber: 140,
                                                     columnNumber: 23
@@ -704,7 +704,7 @@ function HomePage() {
                                                         lineNumber: 180,
                                                         columnNumber: 25
                                                     }, this)
-                                                }, index, false, {
+                                                }, `cibil-loop-${index}`, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                     lineNumber: 179,
                                                     columnNumber: 23
@@ -742,15 +742,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-gray-50",
+                className: "py-20 bg-gradient-to-br from-gray-50 to-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "Find the Right Financial Product"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -758,7 +758,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600",
+                                    className: "text-xl text-gray-600 max-w-2xl mx-auto",
                                     children: "Get started in minutes with our simple, fast, and convenient application process."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -772,31 +772,31 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
+                            className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8",
                             children: [
                                 {
                                     title: "Business Loan",
                                     subtitle: "Instant Funds for Instant Growth",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"],
-                                    color: "from-[#006ACF] to-[#00BCD6]"
+                                    color: "from-[#0A1F44] to-[#000000]"
                                 },
                                 {
                                     title: "Loan Against Property",
                                     subtitle: "Lowest Interest Rate",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building$3e$__["Building"],
-                                    color: "from-[#01035B] to-[#006ACF]"
+                                    color: "from-[#F4D86B] to-[#FFB800]"
                                 },
                                 {
                                     title: "Credit Score",
                                     subtitle: "Check your Credit Score for Free",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trending$2d$up$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__TrendingUp$3e$__["TrendingUp"],
-                                    color: "from-[#00BCD6] to-[#006ACF]"
+                                    color: "from-[#00D4FF] to-[#0A1F44]"
                                 },
                                 {
                                     title: "Used Car Loan",
                                     subtitle: "Get the Best used Car Loan",
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$car$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Car$3e$__["Car"],
-                                    color: "from-[#006ACF] to-[#01035B]"
+                                    color: "from-[#000000] to-[#0A1F44]"
                                 }
                             ].map((product, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
@@ -813,12 +813,12 @@ function HomePage() {
                                     transition: {
                                         delay: index * 0.1
                                     },
-                                    className: "bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all",
+                                    className: "bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: `w-16 h-16 rounded-xl bg-gradient-to-r ${product.color} flex items-center justify-center mb-4`,
+                                            className: `w-20 h-20 rounded-2xl bg-gradient-to-br ${product.color} flex items-center justify-center mb-6 shadow-md`,
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(product.icon, {
-                                                className: "w-8 h-8 text-white"
+                                                className: "w-10 h-10 text-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                 lineNumber: 244,
@@ -830,7 +830,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold text-gray-900 mb-2",
+                                            className: "text-2xl font-bold text-gray-900 mb-3",
                                             children: product.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -838,7 +838,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 mb-4",
+                                            className: "text-gray-600 mb-6 text-base",
                                             children: product.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -846,7 +846,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                            className: "w-full bg-gradient-to-r from-[#006ACF] to-[#00BCD6] text-white",
+                                            className: "w-full bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] font-bold rounded-xl hover:shadow-lg transition-all",
                                             children: product.title === "Credit Score" ? "Check Now" : "Apply Now"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -876,15 +876,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-white",
+                className: "py-20 bg-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "Smart Credit Cards Designed For You"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -892,7 +892,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600 max-w-3xl mx-auto",
+                                    className: "text-xl text-gray-600 max-w-3xl mx-auto",
                                     children: "Explore top credit card options suited to your spending and goals. Finonest assists you in comparing, choosing, and applying online to boost your credit and enjoy rewards."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -906,7 +906,7 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid lg:grid-cols-3 gap-8",
+                            className: "grid lg:grid-cols-3 gap-10",
                             children: [
                                 {
                                     title: "Credit Cards",
@@ -950,15 +950,15 @@ function HomePage() {
                                     transition: {
                                         delay: index * 0.2
                                     },
-                                    className: "bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-100",
+                                    className: "bg-gradient-to-br from-gray-50 to-white p-10 rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-4 mb-6",
+                                            className: "flex items-center gap-5 mb-8",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-12 h-12 rounded-xl bg-gradient-to-r from-[#006ACF] to-[#00BCD6] flex items-center justify-center",
+                                                    className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F4D86B] to-[#FFB800] flex items-center justify-center shadow-md",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(product.icon, {
-                                                        className: "w-6 h-6 text-white"
+                                                        className: "w-8 h-8 text-[#0A1F44]"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                         lineNumber: 309,
@@ -970,7 +970,7 @@ function HomePage() {
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-2xl font-bold text-gray-900",
+                                                    className: "text-3xl font-bold text-gray-900",
                                                     children: product.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -984,19 +984,19 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "space-y-3 mb-6",
+                                            className: "space-y-4 mb-8",
                                             children: product.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "flex items-start gap-3",
+                                                    className: "flex items-start gap-4",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__["CheckCircle"], {
-                                                            className: "w-5 h-5 text-[#00BCD6] mt-0.5 flex-shrink-0"
+                                                            className: "w-6 h-6 text-[#F4D86B] mt-0.5 flex-shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                             lineNumber: 317,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-gray-600",
+                                                            className: "text-gray-600 text-base",
                                                             children: feature
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1015,10 +1015,10 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex gap-3",
+                                            className: "flex gap-4",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                    className: "flex-1 bg-gradient-to-r from-[#006ACF] to-[#00BCD6] text-white",
+                                                    className: "flex-1 bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] font-bold rounded-xl hover:shadow-lg transition-all",
                                                     children: "Apply Now"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1027,7 +1027,7 @@ function HomePage() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                     variant: "outline",
-                                                    className: "flex-1",
+                                                    className: "flex-1 rounded-xl border-2 border-gray-200 hover:border-[#F4D86B] font-semibold",
                                                     children: "Explore More"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1063,15 +1063,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-gray-50",
+                className: "py-20 bg-gradient-to-br from-gray-50 to-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "Easy. Convenient Quick."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1079,7 +1079,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600",
+                                    className: "text-xl text-gray-600",
                                     children: "The simple & Quick steps to your loan."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1093,7 +1093,7 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8",
+                            className: "grid md:grid-cols-2 lg:grid-cols-4 gap-10",
                             children: [
                                 {
                                     step: "01",
@@ -1133,9 +1133,9 @@ function HomePage() {
                                     className: "text-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#006ACF] to-[#00BCD6] flex items-center justify-center",
+                                            className: "w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#F4D86B] to-[#FFB800] flex items-center justify-center shadow-lg",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-2xl font-bold text-white",
+                                                className: "text-3xl font-bold text-[#0A1F44]",
                                                 children: step.step
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1148,7 +1148,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-bold text-gray-900 mb-2",
+                                            className: "text-2xl font-bold text-gray-900 mb-3",
                                             children: step.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1156,7 +1156,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600",
+                                            className: "text-gray-600 text-base",
                                             children: step.description
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1175,9 +1175,9 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mt-12",
+                            className: "text-center mt-16",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                className: "bg-gradient-to-r from-[#006ACF] to-[#00BCD6] text-white px-8 py-4 text-lg font-semibold",
+                                className: "bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] px-10 py-6 text-xl font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all",
                                 children: "Get Started"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1201,15 +1201,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-white",
+                className: "py-20 bg-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "Financial Calculators"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1217,7 +1217,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600 max-w-3xl mx-auto",
+                                    className: "text-xl text-gray-600 max-w-3xl mx-auto",
                                     children: "Our calculators assist you in planning your finances, estimating payments, and making informed money decisions, from EMIs to FDs."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1231,7 +1231,7 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
+                            className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
                             children: [
                                 {
                                     title: "Personal Loan EMI Calculator",
@@ -1278,12 +1278,12 @@ function HomePage() {
                                     transition: {
                                         delay: index * 0.1
                                     },
-                                    className: "bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all",
+                                    className: "bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all hover:-translate-y-1",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-12 h-12 rounded-xl bg-gradient-to-r from-[#006ACF] to-[#00BCD6] flex items-center justify-center mb-4",
+                                            className: "w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F4D86B] to-[#FFB800] flex items-center justify-center mb-6 shadow-md",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(calc.icon, {
-                                                className: "w-6 h-6 text-white"
+                                                className: "w-8 h-8 text-[#0A1F44]"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                 lineNumber: 450,
@@ -1295,7 +1295,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-lg font-bold text-gray-900 mb-2",
+                                            className: "text-xl font-bold text-gray-900 mb-3",
                                             children: calc.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1303,7 +1303,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 text-sm",
+                                            className: "text-gray-600 text-base",
                                             children: calc.description
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1325,7 +1325,7 @@ function HomePage() {
                             className: "text-center mt-12",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                 variant: "outline",
-                                className: "px-8 py-3",
+                                className: "px-10 py-4 text-lg rounded-xl border-2 border-gray-300 hover:border-[#F4D86B] font-semibold",
                                 children: "Explore More Calculators"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1349,15 +1349,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-gray-50",
+                className: "py-20 bg-gradient-to-br from-gray-50 to-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "Trusted By 100K+ Partners"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1365,7 +1365,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600 max-w-3xl mx-auto",
+                                    className: "text-xl text-gray-600 max-w-3xl mx-auto",
                                     children: "Designed exclusively to help Finonest authorized partners get real-time updates on offers, earnings and cases with privileged access."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1379,15 +1379,15 @@ function HomePage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-xl p-8 text-center",
+                            className: "bg-white rounded-3xl p-12 text-center shadow-xl",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-2 md:grid-cols-4 gap-8",
+                                className: "grid grid-cols-2 md:grid-cols-4 gap-12",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#006ACF] mb-2",
+                                                className: "text-5xl font-bold text-[#0A1F44] mb-3",
                                                 children: "100K+"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1395,7 +1395,7 @@ function HomePage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-sm text-gray-600",
+                                                className: "text-base text-gray-600 font-medium",
                                                 children: "Active Partners"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1412,7 +1412,7 @@ function HomePage() {
                                         className: "text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#006ACF] mb-2",
+                                                className: "text-5xl font-bold text-[#0A1F44] mb-3",
                                                 children: "₹1000Cr+"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1420,7 +1420,7 @@ function HomePage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-sm text-gray-600",
+                                                className: "text-base text-gray-600 font-medium",
                                                 children: "Loans Processed"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1437,7 +1437,7 @@ function HomePage() {
                                         className: "text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#006ACF] mb-2",
+                                                className: "text-5xl font-bold text-[#0A1F44] mb-3",
                                                 children: "50+"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1445,7 +1445,7 @@ function HomePage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-sm text-gray-600",
+                                                className: "text-base text-gray-600 font-medium",
                                                 children: "Bank Partners"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1462,7 +1462,7 @@ function HomePage() {
                                         className: "text-center",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-3xl font-bold text-[#006ACF] mb-2",
+                                                className: "text-5xl font-bold text-[#0A1F44] mb-3",
                                                 children: "99%"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1470,7 +1470,7 @@ function HomePage() {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-sm text-gray-600",
+                                                className: "text-base text-gray-600 font-medium",
                                                 children: "Success Rate"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1506,15 +1506,15 @@ function HomePage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-white",
+                className: "py-20 bg-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold text-gray-900 mb-4",
+                                    className: "text-4xl font-bold text-gray-900 mb-6",
                                     children: "What Our Customers Say"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1522,7 +1522,7 @@ function HomePage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-lg text-gray-600",
+                                    className: "text-xl text-gray-600",
                                     children: "Join thousands of satisfied customers who trust Finonest for their financial needs."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1595,14 +1595,14 @@ function HomePage() {
                                     transition: {
                                         delay: index * 0.1
                                     },
-                                    className: "bg-gray-50 p-6 rounded-xl",
+                                    className: "bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition-all",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-center gap-1 mb-4",
+                                            className: "flex items-center gap-1 mb-6",
                                             children: [
                                                 ...Array(testimonial.rating)
                                             ].map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
-                                                    className: "w-5 h-5 fill-yellow-400 text-yellow-400"
+                                                    className: "w-6 h-6 fill-[#FFB800] text-[#FFB800]"
                                                 }, i, false, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
                                                     lineNumber: 568,
@@ -1614,7 +1614,7 @@ function HomePage() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-700 mb-4 italic",
+                                            className: "text-gray-700 mb-6 italic text-base leading-relaxed",
                                             children: [
                                                 '"',
                                                 testimonial.text,
@@ -1631,7 +1631,7 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                            className: "font-semibold text-gray-900",
+                                                            className: "font-bold text-gray-900 text-lg",
                                                             children: testimonial.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1639,7 +1639,7 @@ function HomePage() {
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-gray-500",
+                                                            className: "text-base text-gray-500",
                                                             children: testimonial.location
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",
@@ -1655,7 +1655,7 @@ function HomePage() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "text-right",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-xs bg-[#006ACF] text-white px-2 py-1 rounded-full",
+                                                        className: "text-sm bg-[#F4D86B] text-[#0A1F44] px-3 py-1.5 rounded-full font-semibold",
                                                         children: testimonial.loanType
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/page.tsx",

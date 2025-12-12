@@ -155,7 +155,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$websi
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/Desktop/finonest-website-build-6/node_modules/lucide-react/dist/esm/icons/shield.js [app-ssr] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/Desktop/finonest-website-build-6/node_modules/lucide-react/dist/esm/icons/clock.js [app-ssr] (ecmascript) <export default as Clock>");
 "use client";
-"use client";
 ;
 ;
 ;
@@ -174,7 +173,7 @@ const products = [
         maxAmount: "50+ Courses",
         tenure: "8-12 Weeks",
         processingFee: "₹0",
-        color: "#8B5CF6",
+        color: "#FFB800",
         features: [
             "Expert-led live sessions",
             "Industry certification",
@@ -199,7 +198,7 @@ const products = [
         maxAmount: "Unlimited",
         tenure: "Instant",
         processingFee: "₹0",
-        color: "#4860c3ff",
+        color: "#F4D86B",
         features: [
             "Instant AI-powered valuation",
             "Market-based pricing",
@@ -224,7 +223,7 @@ const products = [
         maxAmount: "₹25 Lakhs",
         tenure: "1-5 Years",
         processingFee: "1%",
-        color: "#0064D6",
+        color: "#FFB800",
         features: [
             "Instant approval in 24 hours",
             "Minimal documentation required",
@@ -249,7 +248,7 @@ const products = [
         maxAmount: "₹5 Crores",
         tenure: "5-30 Years",
         processingFee: "0.5%",
-        color: "#12D6E7",
+        color: "#0A1F44",
         features: [
             "Lowest interest rates in market",
             "Up to 90% financing",
@@ -274,7 +273,7 @@ const products = [
         maxAmount: "₹50 Lakhs",
         tenure: "1-7 Years",
         processingFee: "1.5%",
-        color: "#008B96",
+        color: "#F4D86B",
         features: [
             "Quick disbursement",
             "Collateral-free up to ₹25L",
@@ -299,7 +298,7 @@ const products = [
         maxAmount: "₹10 Lakhs",
         tenure: "Lifetime",
         processingFee: "₹0",
-        color: "#002E9C",
+        color: "#FFB800",
         features: [
             "Up to 5% cashback",
             "Airport lounge access",
@@ -324,7 +323,7 @@ const products = [
         maxAmount: "₹1 Crore",
         tenure: "1-7 Years",
         processingFee: "0.5%",
-        color: "#0064D6",
+        color: "#0A1F44",
         features: [
             "Up to 100% on-road funding",
             "New & used car financing",
@@ -349,7 +348,7 @@ const products = [
         maxAmount: "₹75 Lakhs",
         tenure: "5-15 Years",
         processingFee: "0%",
-        color: "#12D6E7",
+        color: "#F4D86B",
         features: [
             "Zero processing fee",
             "Moratorium during study",
@@ -402,14 +401,14 @@ function ProductsPage() {
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-gradient-to-b from-[#f4f7fa] to-white"
+                        className: "absolute inset-0 bg-gradient-to-b from-gray-50 to-white"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                        lineNumber: 249,
+                        lineNumber: 247,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute top-20 left-10 w-64 h-64 bg-[#0064D6]/10 rounded-full blur-3xl",
+                        className: "absolute top-20 left-10 w-64 h-64 bg-[#F4D86B]/10 rounded-full blur-3xl",
                         animate: {
                             scale: [
                                 1,
@@ -423,11 +422,11 @@ function ProductsPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                        lineNumber: 252,
+                        lineNumber: 249,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute bottom-0 right-10 w-96 h-96 bg-[#12D6E7]/10 rounded-full blur-3xl",
+                        className: "absolute bottom-0 right-10 w-96 h-96 bg-[#FFB800]/10 rounded-full blur-3xl",
                         animate: {
                             scale: [
                                 1.2,
@@ -441,14 +440,14 @@ function ProductsPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                        lineNumber: 257,
+                        lineNumber: 254,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
-                                className: "inline-block px-4 py-2 bg-[#0064D6]/10 rounded-full text-[#0064D6] text-sm font-medium mb-6",
+                                className: "inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-6",
                                 initial: {
                                     opacity: 0,
                                     y: 20
@@ -460,7 +459,7 @@ function ProductsPage() {
                                 children: "Our Products"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                lineNumber: 264,
+                                lineNumber: 261,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -480,17 +479,17 @@ function ProductsPage() {
                                     "Financial Products",
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-transparent bg-clip-text bg-gradient-to-r from-[#0064D6] to-[#12D6E7]",
+                                        className: "text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]",
                                         children: "Built for You"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                        lineNumber: 279,
+                                        lineNumber: 276,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                lineNumber: 272,
+                                lineNumber: 269,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -509,19 +508,19 @@ function ProductsPage() {
                                 children: "Explore our comprehensive range of financial products designed to meet every need. Competitive rates, quick approvals, and transparent processes."
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                lineNumber: 284,
+                                lineNumber: 281,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                        lineNumber: 263,
+                        lineNumber: 260,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                lineNumber: 248,
+                lineNumber: 246,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -572,12 +571,12 @@ function ProductsPage() {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 322,
+                                                                    lineNumber: 319,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                lineNumber: 318,
+                                                                lineNumber: 315,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -593,13 +592,13 @@ function ProductsPage() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                lineNumber: 324,
+                                                                lineNumber: 321,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 317,
+                                                        lineNumber: 314,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -607,7 +606,7 @@ function ProductsPage() {
                                                         children: product.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 332,
+                                                        lineNumber: 329,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -615,7 +614,7 @@ function ProductsPage() {
                                                         children: product.tagline
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 333,
+                                                        lineNumber: 330,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -623,14 +622,14 @@ function ProductsPage() {
                                                         children: product.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 334,
+                                                        lineNumber: 331,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "grid grid-cols-2 gap-4 mb-6",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "p-4 bg-[#f4f7fa] rounded-xl",
+                                                                className: "p-4 bg-gray-50 rounded-2xl",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "text-2xl font-bold",
@@ -640,7 +639,7 @@ function ProductsPage() {
                                                                         children: product.maxAmount
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                        lineNumber: 339,
+                                                                        lineNumber: 336,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -648,24 +647,24 @@ function ProductsPage() {
                                                                         children: "Max Amount"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                        lineNumber: 342,
+                                                                        lineNumber: 339,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                lineNumber: 338,
+                                                                lineNumber: 335,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "p-4 bg-[#f4f7fa] rounded-xl",
+                                                                className: "p-4 bg-gray-50 rounded-2xl",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "text-2xl font-bold text-[#111111]",
                                                                         children: product.tenure
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                        lineNumber: 345,
+                                                                        lineNumber: 342,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -673,19 +672,19 @@ function ProductsPage() {
                                                                         children: "Tenure"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                        lineNumber: 346,
+                                                                        lineNumber: 343,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                lineNumber: 344,
+                                                                lineNumber: 341,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 337,
+                                                        lineNumber: 334,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -693,9 +692,9 @@ function ProductsPage() {
                                                         target: "_blank",
                                                         rel: "noopener noreferrer",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                                            className: "w-full py-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2",
+                                                            className: "w-full py-4 rounded-2xl font-semibold text-white flex items-center justify-center gap-2 shadow-lg",
                                                             style: {
-                                                                background: `linear-gradient(135deg, ${product.color}, #002E9C)`
+                                                                background: `linear-gradient(135deg, ${product.color}, #0A1F44)`
                                                             },
                                                             whileHover: {
                                                                 scale: 1.02
@@ -711,36 +710,36 @@ function ProductsPage() {
                                                                     className: "w-5 h-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 365,
+                                                                    lineNumber: 362,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 356,
+                                                            lineNumber: 353,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                        lineNumber: 351,
+                                                        lineNumber: 348,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                lineNumber: 315,
+                                                lineNumber: 312,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                            lineNumber: 314,
+                                            lineNumber: 311,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-6",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "bg-white rounded-2xl p-6 shadow-lg shadow-black/5 border border-gray-100",
+                                                    className: "bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all",
                                                     initial: {
                                                         opacity: 0,
                                                         x: index % 2 === 0 ? 50 : -50
@@ -763,14 +762,14 @@ function ProductsPage() {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 381,
+                                                                    lineNumber: 378,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 "Key Features"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 380,
+                                                            lineNumber: 377,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -785,29 +784,29 @@ function ProductsPage() {
                                                                             }
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                            lineNumber: 387,
+                                                                            lineNumber: 384,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         feature
                                                                     ]
                                                                 }, feature, true, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 386,
+                                                                    lineNumber: 383,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 384,
+                                                            lineNumber: 381,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                    lineNumber: 374,
+                                                    lineNumber: 371,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                                    className: "bg-white rounded-2xl p-6 shadow-lg shadow-black/5 border border-gray-100",
+                                                    className: "bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all",
                                                     initial: {
                                                         opacity: 0,
                                                         x: index % 2 === 0 ? 50 : -50
@@ -833,14 +832,14 @@ function ProductsPage() {
                                                                     }
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 403,
+                                                                    lineNumber: 400,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 "Eligibility Criteria"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 402,
+                                                            lineNumber: 399,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -855,25 +854,25 @@ function ProductsPage() {
                                                                             }
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                            lineNumber: 409,
+                                                                            lineNumber: 406,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         item
                                                                     ]
                                                                 }, item, true, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 408,
+                                                                    lineNumber: 405,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 406,
+                                                            lineNumber: 403,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                    lineNumber: 395,
+                                                    lineNumber: 392,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -894,13 +893,13 @@ function ProductsPage() {
                                                     },
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "bg-[#f4f7fa] rounded-xl p-4 text-center",
+                                                            className: "bg-gray-50 rounded-2xl p-4 text-center",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calculator$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calculator$3e$__["Calculator"], {
                                                                     className: "w-5 h-5 mx-auto mb-2 text-gray-400"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 425,
+                                                                    lineNumber: 422,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -908,7 +907,7 @@ function ProductsPage() {
                                                                     children: "Processing Fee"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 426,
+                                                                    lineNumber: 423,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -916,23 +915,23 @@ function ProductsPage() {
                                                                     children: product.processingFee
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 427,
+                                                                    lineNumber: 424,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 424,
+                                                            lineNumber: 421,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "bg-[#f4f7fa] rounded-xl p-4 text-center",
+                                                            className: "bg-gray-50 rounded-2xl p-4 text-center",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
                                                                     className: "w-5 h-5 mx-auto mb-2 text-gray-400"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 430,
+                                                                    lineNumber: 427,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -940,7 +939,7 @@ function ProductsPage() {
                                                                     children: "Approval Time"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 431,
+                                                                    lineNumber: 428,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -948,23 +947,23 @@ function ProductsPage() {
                                                                     children: "24-48 hrs"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 432,
+                                                                    lineNumber: 429,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 429,
+                                                            lineNumber: 426,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "bg-[#f4f7fa] rounded-xl p-4 text-center",
+                                                            className: "bg-gray-50 rounded-2xl p-4 text-center",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
                                                                     className: "w-5 h-5 mx-auto mb-2 text-gray-400"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 435,
+                                                                    lineNumber: 432,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -972,7 +971,7 @@ function ProductsPage() {
                                                                     children: "Insurance"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 436,
+                                                                    lineNumber: 433,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -980,55 +979,55 @@ function ProductsPage() {
                                                                     children: "Optional"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                                    lineNumber: 437,
+                                                                    lineNumber: 434,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                            lineNumber: 434,
+                                                            lineNumber: 431,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                                    lineNumber: 417,
+                                                    lineNumber: 414,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                            lineNumber: 372,
+                                            lineNumber: 369,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                    lineNumber: 310,
+                                    lineNumber: 307,
                                     columnNumber: 17
                                 }, this)
                             }, product.id, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                lineNumber: 301,
+                                lineNumber: 298,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                        lineNumber: 299,
+                        lineNumber: 296,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                    lineNumber: 298,
+                    lineNumber: 295,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                lineNumber: 297,
+                lineNumber: 294,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-gradient-to-r from-[#0064D6] to-[#002E9C]",
+                className: "py-16 bg-gradient-to-r from-[#0A1F44] to-[#000000]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
                     children: [
@@ -1048,7 +1047,7 @@ function ProductsPage() {
                             children: "Not Sure Which Product Is Right for You?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                            lineNumber: 451,
+                            lineNumber: 448,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1070,7 +1069,7 @@ function ProductsPage() {
                             children: "Take our quick eligibility check to find the perfect financial product for your needs."
                         }, void 0, false, {
                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                            lineNumber: 459,
+                            lineNumber: 456,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1091,7 +1090,7 @@ function ProductsPage() {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/eligibility",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$finonest$2d$website$2d$build$2d$6$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].button, {
-                                    className: "bg-white text-[#0064D6] px-8 py-4 rounded-full font-semibold text-lg shadow-xl inline-flex items-center gap-2",
+                                    className: "bg-gradient-to-r from-[#F4D86B] to-[#FFB800] text-[#0A1F44] px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl inline-flex items-center gap-2",
                                     whileHover: {
                                         scale: 1.02
                                     },
@@ -1106,40 +1105,40 @@ function ProductsPage() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                            lineNumber: 483,
+                                            lineNumber: 480,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                    lineNumber: 475,
+                                    lineNumber: 472,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                                lineNumber: 474,
+                                lineNumber: 471,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                            lineNumber: 468,
+                            lineNumber: 465,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                    lineNumber: 450,
+                    lineNumber: 447,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-                lineNumber: 449,
+                lineNumber: 446,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/finonest-website-build-6/app/products/page.tsx",
-        lineNumber: 246,
+        lineNumber: 244,
         columnNumber: 5
     }, this);
 }
