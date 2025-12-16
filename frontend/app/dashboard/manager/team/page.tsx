@@ -109,9 +109,9 @@ export default function TeamPage() {
             {teamMembers.map((member, index) => (
               <div
                 key={member.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
+                }
+                }
+                }
                 className="border rounded-xl p-4 hover:border-[#0064D6]/30 transition-colors"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center gap-4">

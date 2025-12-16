@@ -34,21 +34,21 @@ export default function BlogPage() {
         {/* Floating shapes */}
         <div
           className="absolute top-20 left-[10%] w-64 h-64 bg-[#12D6E7]/10 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1], x: [0, 20, 0] }}
-          transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          }
+          }
         />
         <div
           className="absolute bottom-10 right-[10%] w-80 h-80 bg-[#0064D6]/10 rounded-full blur-3xl"
-          animate={{ scale: [1.2, 1, 1.2], x: [0, -20, 0] }}
-          transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          }
+          }
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            }
+             : {}}
+            }
           >
             <span className="inline-block px-4 py-1.5 bg-[#0064D6]/10 text-[#0064D6] rounded-full text-sm font-medium mb-4">
               Finance Blog
@@ -66,9 +66,9 @@ export default function BlogPage() {
             {/* Search Bar */}
             <div
               className="max-w-xl mx-auto relative"
-              initial={{ opacity: 0, y: 20 }}
-              animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              }
+               : {}}
+              }
             >
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
               <input
@@ -96,9 +96,9 @@ export default function BlogPage() {
                     ? "bg-[#0064D6] text-white shadow-lg shadow-[#0064D6]/25"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
+                }
+                }
+                }
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -115,10 +115,10 @@ export default function BlogPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.h2
               className="text-2xl font-bold text-[#111111] mb-8"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              }
+              }
+              }
+              }
             >
               Featured Articles
             </motion.h2>
@@ -128,10 +128,10 @@ export default function BlogPage() {
                 <motion.article
                   key={post.id}
                   className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  }
+                  }
+                  }
+                  }
                   whileHover={{ y: -8 }}
                 >
                   <div className="aspect-[16/10] overflow-hidden">
@@ -177,10 +177,10 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2
             className="text-2xl font-bold text-[#111111] mb-8"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            }
+            }
+            }
+            }
           >
             Latest Articles
           </motion.h2>
@@ -190,10 +190,10 @@ export default function BlogPage() {
               <motion.article
                 key={post.id}
                 className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                }
+                }
+                }
+                }
                 whileHover={{ y: -8 }}
               >
                 <div className="aspect-[16/10] overflow-hidden">
@@ -223,9 +223,9 @@ export default function BlogPage() {
 
                   <div
                     className="mt-4 pt-4 border-t border-gray-100"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                    }
+                    }
+                    }
                   >
                     <Link
                       href="#"
@@ -243,9 +243,9 @@ export default function BlogPage() {
           {/* Load More */}
           <div
             className="text-center mt-12"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            }
+            }
+            }
           >
             <motion.button
               className="px-8 py-4 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-full font-semibold shadow-lg shadow-[#0064D6]/25"
@@ -263,10 +263,10 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="relative bg-gradient-to-br from-[#0064D6] to-[#002E9C] rounded-3xl p-8 sm:p-12 overflow-hidden"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            }
+            }
+            }
+            }
           >
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />

@@ -227,7 +227,7 @@ export default function UsedCarLoanPage() {
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
+              <div } }>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">{content.h1}</h1>
                 <p className="text-xl mb-2">{content.content.heroSection.subtitle}</p>
                 <p className="text-lg mb-8 opacity-90">{content.content.heroSection.description}</p>
@@ -242,7 +242,7 @@ export default function UsedCarLoanPage() {
                   </Button>
                 </div>
               </div>
-              <div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="relative">
+              <div } } className="relative">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <h3 className="text-2xl font-bold mb-6">Quick Loan Details</h3>
                   <div className="grid grid-cols-2 gap-4">
@@ -276,9 +276,9 @@ export default function UsedCarLoanPage() {
               {content.content.features.map((feature, index) => (
                 <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  }
+                  }
+                  }
                 >
                   <Card className="text-center h-full">
                     <CardContent className="p-6">

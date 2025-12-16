@@ -75,8 +75,8 @@ export default function CustomerDashboard() {
     <div className="space-y-6">
       {/* Welcome Banner */}
       <div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        }
+        }
         className="bg-gradient-to-r from-[#0064D6] to-[#002E9C] rounded-2xl p-6 text-white"
       >
         <h2 className="text-2xl font-bold mb-2">Welcome back, John!</h2>
@@ -92,9 +92,9 @@ export default function CustomerDashboard() {
         {stats.map((stat, index) => (
           <div
             key={stat.label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            }
+            }
+            }
           >
             <Card>
               <CardContent className="p-5">

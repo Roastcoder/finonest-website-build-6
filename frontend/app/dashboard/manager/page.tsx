@@ -61,8 +61,8 @@ export default function ManagerDashboard() {
     <div className="space-y-6">
       {/* Welcome Banner */}
       <div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        }
+        }
         className="bg-gradient-to-r from-[#002E9C] to-[#0064D6] rounded-2xl p-6 text-white"
       >
         <h2 className="text-2xl font-bold mb-2">Team Overview</h2>
@@ -86,9 +86,9 @@ export default function ManagerDashboard() {
         {stats.map((stat, index) => (
           <div
             key={stat.label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            }
+            }
+            }
           >
             <Card>
               <CardContent className="p-4">
@@ -122,9 +122,9 @@ export default function ManagerDashboard() {
         {alerts.map((alert, index) => (
           <div
             key={index}
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.1 }}
+            }
+            }
+            }
             className={`flex items-center gap-3 p-3 rounded-lg ${
               alert.type === "warning"
                 ? "bg-yellow-50 border border-yellow-200"

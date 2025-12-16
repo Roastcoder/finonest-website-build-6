@@ -22,7 +22,7 @@ export default function CreditCardsPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid lg:grid-cols-2 gap-12">
-          <div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
+          <div } } className="space-y-6">
             <Card className="rounded-3xl shadow-lg hover:shadow-2xl transition-all">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl">
@@ -102,7 +102,7 @@ export default function CreditCardsPage() {
             </Card>
           </div>
 
-          <div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="space-y-6">
+          <div } } className="space-y-6">
             <Card className="rounded-3xl shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">

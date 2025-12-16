@@ -62,9 +62,9 @@ export default function DocumentsPage() {
               return (
                 <div
                   key={doc.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
+                  }
+                  }
+                  }
                   className="flex items-center justify-between p-4 border rounded-xl hover:bg-gray-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">

@@ -69,8 +69,8 @@ export default function EmployeeDashboard() {
       {/* Welcome & Target */}
       <div className="grid lg:grid-cols-3 gap-6">
         <div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          }
+          }
           className="lg:col-span-2 bg-gradient-to-r from-[#0064D6] to-[#002E9C] rounded-2xl p-6 text-white"
         >
           <h2 className="text-2xl font-bold mb-2">Good Morning, Amit!</h2>
@@ -104,9 +104,9 @@ export default function EmployeeDashboard() {
         {stats.map((stat, index) => (
           <div
             key={stat.label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
+            }
+            }
+            }
           >
             <Card>
               <CardContent className="p-4">

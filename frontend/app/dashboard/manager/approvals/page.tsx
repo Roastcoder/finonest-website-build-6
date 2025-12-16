@@ -118,9 +118,9 @@ export default function ApprovalsPage() {
               {pendingApprovals.map((approval, index) => (
                 <div
                   key={approval.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  }
+                  }
+                  }
                   className="border rounded-xl p-4"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -169,9 +169,9 @@ export default function ApprovalsPage() {
               {completedApprovals.map((approval, index) => (
                 <div
                   key={approval.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  }
+                  }
+                  }
                   className="border rounded-xl p-4 opacity-75"
                 >
                   <div className="flex items-center justify-between">

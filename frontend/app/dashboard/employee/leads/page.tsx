@@ -147,9 +147,9 @@ export default function LeadsPage() {
                 {filteredLeads.map((lead, index) => (
                   <motion.tr
                     key={lead.id}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: index * 0.05 }}
+                    }
+                    }
+                    }
                     className="border-b last:border-0 hover:bg-gray-50"
                   >
                     <td className="py-3 px-4">
