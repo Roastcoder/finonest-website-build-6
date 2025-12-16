@@ -99,7 +99,7 @@ export default function AboutPage() {
       <motion.section className="relative pt-32 pb-20 overflow-hidden" style={{ y: heroY, opacity: heroOpacity }}>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white" />
 
-        <motion.div
+        <div
           className="absolute top-20 left-10 w-64 h-64 bg-[#F4D86B]/10 rounded-full blur-3xl"
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY }}
@@ -140,7 +140,7 @@ export default function AboutPage() {
                 financial services accessible, transparent, and hassle-free.
               </motion.p>
 
-              <motion.div
+              <div
                 className="flex flex-wrap gap-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -158,10 +158,10 @@ export default function AboutPage() {
                   <CheckCircle2 className="w-5 h-5 text-[#FFB800]" />
                   <span className="text-gray-700">Since 2017</span>
                 </div>
-              </motion.div>
+              </div>
             </div>
 
-            <motion.div
+            <div
               className="relative"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -188,7 +188,7 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </motion.section>
@@ -255,7 +255,7 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={service.name}
                 className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:border-[#F4D86B]/30 transition-all"
                 initial={{ opacity: 0, y: 20 }}
@@ -265,7 +265,7 @@ export default function AboutPage() {
               >
                 <h3 className="text-lg font-bold text-[#111111] mb-2">{service.name}</h3>
                 <p className="text-gray-600 text-sm">{service.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -341,7 +341,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 lg:grid-cols-6 gap-6">
               {milestones.map((milestone, index) => (
-                <motion.div
+                <div
                   key={milestone.year}
                   className="relative"
                   initial={{ opacity: 0, y: 30 }}
@@ -355,7 +355,7 @@ export default function AboutPage() {
                     <div className="text-white/60 text-sm">{milestone.description}</div>
                   </div>
                   <div className="hidden lg:block absolute -bottom-8 left-1/2 -translate-x-1/2 w-4 h-4 bg-[#F4D86B] rounded-full border-4 border-[#0A1F44]" />
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
@@ -386,7 +386,7 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <motion.div
+              <div
                 key={member.name}
                 className="text-center group"
                 initial={{ opacity: 0, y: 30 }}
@@ -412,7 +412,7 @@ export default function AboutPage() {
                 <h3 className="text-lg font-bold text-[#111111]">{member.name}</h3>
                 <p className="text-[#F4D86B] font-medium text-sm mb-2">{member.role}</p>
                 <p className="text-gray-500 text-xs leading-relaxed px-2">{member.bio}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

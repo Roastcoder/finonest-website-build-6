@@ -75,7 +75,7 @@ export default function ApplicationsPage() {
             {applications.map((app, index) => {
               const status = statusConfig[app.status]
               return (
-                <motion.div
+                <div
                   key={app.id}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ export default function ApplicationsPage() {
                       </Button>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               )
             })}
           </div>

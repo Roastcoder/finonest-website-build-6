@@ -60,7 +60,7 @@ export default function ManagerDashboard() {
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="bg-gradient-to-r from-[#002E9C] to-[#0064D6] rounded-2xl p-6 text-white"
@@ -79,12 +79,12 @@ export default function ManagerDashboard() {
             </Button>
           </Link>
         </div>
-      </motion.div>
+      </div>
 
       {/* Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, index) => (
-          <motion.div
+          <div
             key={stat.label}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,14 +113,14 @@ export default function ManagerDashboard() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         ))}
       </div>
 
       {/* Alerts */}
       <div className="space-y-2">
         {alerts.map((alert, index) => (
-          <motion.div
+          <div
             key={index}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -143,7 +143,7 @@ export default function ManagerDashboard() {
               }`}
             />
             <p className="text-sm text-gray-700">{alert.message}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
 

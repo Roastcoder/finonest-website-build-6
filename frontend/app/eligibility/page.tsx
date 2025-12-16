@@ -168,7 +168,7 @@ export default function EligibilityPage() {
         {!showResult ? (
           <>
             {/* Progress Steps */}
-            <motion.div
+            <div
               className="flex items-center justify-center mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -176,7 +176,7 @@ export default function EligibilityPage() {
             >
               {steps.map((step, index) => (
                 <div key={step.id} className="flex items-center">
-                  <motion.div
+                  <div
                     className={`flex items-center justify-center w-12 h-12 rounded-full border-2 transition-all ${
                       currentStep >= step.id
                         ? "bg-[#F4D86B] border-[#F4D86B] text-[#0A1F44]"
@@ -187,7 +187,7 @@ export default function EligibilityPage() {
                     }}
                   >
                     {currentStep > step.id ? <CheckCircle2 className="w-6 h-6" /> : <step.icon className="w-5 h-5" />}
-                  </motion.div>
+                  </div>
                   {index < steps.length - 1 && (
                     <div
                       className={`w-16 sm:w-24 h-1 mx-2 rounded-full transition-colors ${
@@ -197,10 +197,10 @@ export default function EligibilityPage() {
                   )}
                 </div>
               ))}
-            </motion.div>
+            </div>
 
             {/* Form Card */}
-            <motion.div
+            <div
               className="bg-white rounded-3xl shadow-xl shadow-black/5 p-8 md:p-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -209,7 +209,7 @@ export default function EligibilityPage() {
               <AnimatePresence mode="wait">
                 {/* Step 1: Personal Details */}
                 {currentStep === 1 && (
-                  <motion.div
+                  <div
                     key="step1"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -263,12 +263,12 @@ export default function EligibilityPage() {
                         />
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 )}
 
                 {/* Step 2: Employment Info */}
                 {currentStep === 2 && (
-                  <motion.div
+                  <div
                     key="step2"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -314,12 +314,12 @@ export default function EligibilityPage() {
                         placeholder="e.g., 50000"
                       />
                     </div>
-                  </motion.div>
+                  </div>
                 )}
 
                 {/* Step 3: Financial Details */}
                 {currentStep === 3 && (
-                  <motion.div
+                  <div
                     key="step3"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -350,12 +350,12 @@ export default function EligibilityPage() {
                       />
                       <p className="text-sm text-gray-500 mt-2">Leave blank if you don't know your credit score</p>
                     </div>
-                  </motion.div>
+                  </div>
                 )}
 
                 {/* Step 4: Loan Requirement */}
                 {currentStep === 4 && (
-                  <motion.div
+                  <div
                     key="step4"
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -424,7 +424,7 @@ export default function EligibilityPage() {
                         </select>
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
                 )}
               </AnimatePresence>
 
@@ -464,31 +464,31 @@ export default function EligibilityPage() {
                   )}
                 </motion.button>
               </div>
-            </motion.div>
+            </div>
           </>
         ) : (
           /* Results */
-          <motion.div
+          <div
             className="bg-white rounded-3xl shadow-xl shadow-black/5 p-8 md:p-12"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
           >
             {eligibilityResult?.eligible ? (
               <div className="text-center">
-                <motion.div
+                <div
                   className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <CheckCircle2 className="w-10 h-10 text-green-500" />
-                </motion.div>
+                </div>
 
                 <h2 className="text-3xl font-bold text-[#111111] mb-2">Congratulations!</h2>
                 <p className="text-gray-600 mb-8">You are eligible for a loan. Here are your personalized offers:</p>
 
                 <div className="grid sm:grid-cols-3 gap-6 mb-8">
-                  <motion.div
+                  <div
                     className="bg-gradient-to-br from-[#F4D86B]/10 to-[#F4D86B]/20 rounded-3xl p-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -496,8 +496,8 @@ export default function EligibilityPage() {
                   >
                     <div className="text-sm text-gray-500 mb-1">Maximum Amount</div>
                     <div className="text-3xl font-bold text-[#0A1F44]">{eligibilityResult.maxAmount}</div>
-                  </motion.div>
-                  <motion.div
+                  </div>
+                  <div
                     className="bg-gradient-to-br from-[#FFB800]/10 to-[#FFB800]/20 rounded-3xl p-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -505,8 +505,8 @@ export default function EligibilityPage() {
                   >
                     <div className="text-sm text-gray-500 mb-1">Interest Rate</div>
                     <div className="text-3xl font-bold text-[#FFB800]">{eligibilityResult.rate}</div>
-                  </motion.div>
-                  <motion.div
+                  </div>
+                  <div
                     className="bg-gradient-to-br from-[#0A1F44]/10 to-[#0A1F44]/20 rounded-3xl p-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -514,7 +514,7 @@ export default function EligibilityPage() {
                   >
                     <div className="text-sm text-gray-500 mb-1">Max EMI Capacity</div>
                     <div className="text-3xl font-bold text-[#0A1F44]">{eligibilityResult.emi}</div>
-                  </motion.div>
+                  </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -542,14 +542,14 @@ export default function EligibilityPage() {
               </div>
             ) : (
               <div className="text-center">
-                <motion.div
+                <div
                   className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <Calculator className="w-10 h-10 text-amber-500" />
-                </motion.div>
+                </div>
 
                 <h2 className="text-3xl font-bold text-[#111111] mb-2">Let's Talk!</h2>
                 <p className="text-gray-600 mb-8 max-w-md mx-auto">
@@ -579,7 +579,7 @@ export default function EligibilityPage() {
                 </div>
               </div>
             )}
-          </motion.div>
+          </div>
         )}
       </div>
     </div>

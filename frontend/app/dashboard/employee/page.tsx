@@ -68,7 +68,7 @@ export default function EmployeeDashboard() {
     <div className="space-y-6">
       {/* Welcome & Target */}
       <div className="grid lg:grid-cols-3 gap-6">
-        <motion.div
+        <div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="lg:col-span-2 bg-gradient-to-r from-[#0064D6] to-[#002E9C] rounded-2xl p-6 text-white"
@@ -81,7 +81,7 @@ export default function EmployeeDashboard() {
               Add Lead
             </Button>
           </div>
-        </motion.div>
+        </div>
 
         <Card>
           <CardContent className="p-5">
@@ -102,7 +102,7 @@ export default function EmployeeDashboard() {
       {/* Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, index) => (
-          <motion.div
+          <div
             key={stat.label}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ export default function EmployeeDashboard() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         ))}
       </div>
 

@@ -123,7 +123,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Methods */}
-        <motion.div
+        <div
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -150,11 +150,11 @@ export default function ContactPage() {
               <p className="text-gray-500 text-sm">{method.subtitle}</p>
             </motion.a>
           ))}
-        </motion.div>
+        </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <motion.div
+          <div
             className="bg-white rounded-3xl p-8 md:p-10 shadow-xl shadow-black/5"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -244,19 +244,19 @@ export default function ContactPage() {
                 </form>
               </>
             ) : (
-              <motion.div
+              <div
                 className="text-center py-12"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
               >
-                <motion.div
+                <div
                   className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <CheckCircle2 className="w-10 h-10 text-green-500" />
-                </motion.div>
+                </div>
                 <h3 className="text-2xl font-bold text-[#111111] mb-2">Message Sent!</h3>
                 <p className="text-gray-600 mb-6">
                   Thank you for reaching out. Our team will get back to you within 24 hours.
@@ -270,16 +270,16 @@ export default function ContactPage() {
                 >
                   Send another message
                 </motion.button>
-              </motion.div>
+              </div>
             )}
-          </motion.div>
+          </div>
 
           {/* FAQs */}
-          <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
+          <div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
             <h2 className="text-2xl font-bold text-[#111111] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <motion.div
+                <div
                   key={index}
                   className="bg-white rounded-2xl shadow-lg shadow-black/5 overflow-hidden border border-gray-100 hover:border-[#F4D86B]/30 transition-all"
                   initial={{ opacity: 0, y: 20 }}
@@ -291,11 +291,11 @@ export default function ContactPage() {
                     className="w-full px-6 py-4 text-left flex items-center justify-between"
                   >
                     <span className="font-semibold text-[#111111]">{faq.question}</span>
-                    <motion.div animate={{ rotate: expandedFaq === index ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                    <div animate={{ rotate: expandedFaq === index ? 180 : 0 }} transition={{ duration: 0.2 }}>
                       <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
-                    </motion.div>
+                    </div>
                   </button>
-                  <motion.div
+                  <div
                     initial={false}
                     animate={{
                       height: expandedFaq === index ? "auto" : 0,
@@ -305,8 +305,8 @@ export default function ContactPage() {
                     className="overflow-hidden"
                   >
                     <p className="px-6 pb-4 text-gray-600">{faq.answer}</p>
-                  </motion.div>
-                </motion.div>
+                  </div>
+                </div>
               ))}
             </div>
 
@@ -332,7 +332,7 @@ export default function ContactPage() {
               </div>
               <p className="mt-4 text-sm text-[#0A1F44] font-medium">Phone support available 24/7 at 1800-123-456</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

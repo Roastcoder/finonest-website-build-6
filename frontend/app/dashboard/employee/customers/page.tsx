@@ -64,7 +64,7 @@ export default function CustomersPage() {
         <CardContent>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {customers.map((customer, index) => (
-              <motion.div
+              <div
                 key={customer.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ export default function CustomersPage() {
                     <User className="h-4 w-4 mr-1" /> View
                   </Button>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </CardContent>

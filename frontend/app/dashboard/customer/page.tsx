@@ -74,7 +74,7 @@ export default function CustomerDashboard() {
   return (
     <div className="space-y-6">
       {/* Welcome Banner */}
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="bg-gradient-to-r from-[#0064D6] to-[#002E9C] rounded-2xl p-6 text-white"
@@ -85,12 +85,12 @@ export default function CustomerDashboard() {
           Pay Now
           <IndianRupee className="ml-2 h-4 w-4" />
         </Button>
-      </motion.div>
+      </div>
 
       {/* Stats Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, index) => (
-          <motion.div
+          <div
             key={stat.label}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function CustomerDashboard() {
                 </div>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         ))}
       </div>
 

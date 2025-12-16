@@ -60,7 +60,7 @@ export default function DocumentsPage() {
             {documents.map((doc, index) => {
               const status = statusConfig[doc.status]
               return (
-                <motion.div
+                <div
                   key={doc.id}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export default function DocumentsPage() {
                       </Button>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               )
             })}
           </div>

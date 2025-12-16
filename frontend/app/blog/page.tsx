@@ -32,19 +32,19 @@ export default function BlogPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#f4f7fa] via-white to-[#e8f4ff]" />
 
         {/* Floating shapes */}
-        <motion.div
+        <div
           className="absolute top-20 left-[10%] w-64 h-64 bg-[#12D6E7]/10 rounded-full blur-3xl"
           animate={{ scale: [1, 1.2, 1], x: [0, 20, 0] }}
           transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
         />
-        <motion.div
+        <div
           className="absolute bottom-10 right-[10%] w-80 h-80 bg-[#0064D6]/10 rounded-full blur-3xl"
           animate={{ scale: [1.2, 1, 1.2], x: [0, -20, 0] }}
           transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
+          <div
             className="text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
@@ -64,7 +64,7 @@ export default function BlogPage() {
             </p>
 
             {/* Search Bar */}
-            <motion.div
+            <div
               className="max-w-xl mx-auto relative"
               initial={{ opacity: 0, y: 20 }}
               animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
@@ -78,8 +78,8 @@ export default function BlogPage() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 rounded-2xl border border-gray-200 bg-white shadow-lg shadow-black/5 focus:outline-none focus:ring-2 focus:ring-[#0064D6]/20 focus:border-[#0064D6] transition-all duration-300"
               />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -221,7 +221,7 @@ export default function BlogPage() {
                     <span>{post.readTime}</span>
                   </div>
 
-                  <motion.div
+                  <div
                     className="mt-4 pt-4 border-t border-gray-100"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -234,14 +234,14 @@ export default function BlogPage() {
                       Read More
                       <ArrowRight className="w-4 h-4" />
                     </Link>
-                  </motion.div>
+                  </div>
                 </div>
               </motion.article>
             ))}
           </div>
 
           {/* Load More */}
-          <motion.div
+          <div
             className="text-center mt-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -254,14 +254,14 @@ export default function BlogPage() {
             >
               Load More Articles
             </motion.button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Newsletter */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
+          <div
             className="relative bg-gradient-to-br from-[#0064D6] to-[#002E9C] rounded-3xl p-8 sm:p-12 overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -293,7 +293,7 @@ export default function BlogPage() {
                 </motion.button>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </main>

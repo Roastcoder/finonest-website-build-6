@@ -246,12 +246,12 @@ export default function ProductsPage() {
       <motion.section className="relative pt-32 pb-20 overflow-hidden" style={{ y: heroY, opacity: heroOpacity }}>
         <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white" />
 
-        <motion.div
+        <div
           className="absolute top-20 left-10 w-64 h-64 bg-[#F4D86B]/10 rounded-full blur-3xl"
           animate={{ scale: [1, 1.2, 1] }}
           transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY }}
         />
-        <motion.div
+        <div
           className="absolute bottom-0 right-10 w-96 h-96 bg-[#FFB800]/10 rounded-full blur-3xl"
           animate={{ scale: [1.2, 1, 1.2] }}
           transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY }}
@@ -295,7 +295,7 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-16">
             {products.map((product, index) => (
-              <motion.div
+              <div
                 key={product.id}
                 id={product.id}
                 className="scroll-mt-24"
@@ -368,7 +368,7 @@ export default function ProductsPage() {
                   {/* Details */}
                   <div className="space-y-6">
                     {/* Features */}
-                    <motion.div
+                    <div
                       className="bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all"
                       initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -386,10 +386,10 @@ export default function ProductsPage() {
                           </li>
                         ))}
                       </ul>
-                    </motion.div>
+                    </div>
 
                     {/* Eligibility */}
-                    <motion.div
+                    <div
                       className="bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all"
                       initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -408,10 +408,10 @@ export default function ProductsPage() {
                           </li>
                         ))}
                       </ul>
-                    </motion.div>
+                    </div>
 
                     {/* Quick info */}
-                    <motion.div
+                    <div
                       className="grid grid-cols-3 gap-4"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -433,10 +433,10 @@ export default function ProductsPage() {
                         <div className="text-sm text-gray-500">Insurance</div>
                         <div className="font-bold text-[#111111]">Optional</div>
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -462,7 +462,7 @@ export default function ProductsPage() {
           >
             Take our quick eligibility check to find the perfect financial product for your needs.
           </motion.p>
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -480,7 +480,7 @@ export default function ProductsPage() {
                 <ArrowRight className="w-5 h-5" />
               </motion.button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

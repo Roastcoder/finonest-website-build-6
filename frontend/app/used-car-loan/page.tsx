@@ -175,7 +175,7 @@ export default function UsedCarLoanPage() {
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
+              <div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">Used Car Loan in India – Finance Your Dream Pre-Owned Car</h1>
                 <p className="text-xl mb-2">Get instant approval with competitive rates starting @ 8.5%</p>
                 <p className="text-lg mb-6 opacity-90">Transform your dream of owning a car into reality with our hassle-free used car loan. Get up to 90% financing for pre-owned vehicles with quick processing and minimal documentation.</p>
@@ -198,9 +198,9 @@ export default function UsedCarLoanPage() {
                     </Button>
                   </Link>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="relative">
+              <div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} className="relative">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                   <h3 className="text-2xl font-bold mb-6">Quick Loan Details</h3>
                   <div className="grid grid-cols-2 gap-4">
@@ -222,7 +222,7 @@ export default function UsedCarLoanPage() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -507,7 +507,7 @@ export default function UsedCarLoanPage() {
                   description: "Dedicated relationship manager for complete loan assistance"
                 }
               ].map((feature, index) => (
-                <motion.div
+                <div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -522,7 +522,7 @@ export default function UsedCarLoanPage() {
                       <p className="text-gray-600">{feature.description}</p>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
           </section>

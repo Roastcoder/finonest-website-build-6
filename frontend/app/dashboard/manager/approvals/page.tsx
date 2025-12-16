@@ -116,7 +116,7 @@ export default function ApprovalsPage() {
           <Card>
             <CardContent className="p-4 space-y-4">
               {pendingApprovals.map((approval, index) => (
-                <motion.div
+                <div
                   key={approval.id}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -157,7 +157,7 @@ export default function ApprovalsPage() {
                       </Button>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </CardContent>
           </Card>
@@ -167,7 +167,7 @@ export default function ApprovalsPage() {
           <Card>
             <CardContent className="p-4 space-y-4">
               {completedApprovals.map((approval, index) => (
-                <motion.div
+                <div
                   key={approval.id}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ export default function ApprovalsPage() {
                       {approval.status.charAt(0).toUpperCase() + approval.status.slice(1)}
                     </Badge>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </CardContent>
           </Card>

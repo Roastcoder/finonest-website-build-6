@@ -107,7 +107,7 @@ export default function TeamPage() {
         <CardContent>
           <div className="space-y-4">
             {teamMembers.map((member, index) => (
-              <motion.div
+              <div
                 key={member.id}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -184,7 +184,7 @@ export default function TeamPage() {
                     </DropdownMenu>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </CardContent>
