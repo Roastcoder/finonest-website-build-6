@@ -42,12 +42,7 @@ function LoginForm() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-teal-50 to-cyan-50 flex items-center justify-center p-4">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="w-full max-w-md"
-      >
+      <div className="w-full max-w-md">
         <Card>
           <CardHeader className="text-center">
               <img src="/logo.png" alt="Finonest" className="h-12 mx-auto mb-4" />
@@ -104,7 +99,7 @@ function LoginForm() {
             </div>
           </CardContent>
         </Card>
-      </motion.div>
+      </div>
     </div>
   )
 }
