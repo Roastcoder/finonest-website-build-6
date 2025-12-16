@@ -85,10 +85,7 @@ const services = [
 export default function AboutPage() {
   const sectionRef = useRef<HTMLDivElement>(null)
 
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  })
+  const { scrollYProgress } = useScroll()
 
   const heroY = useTransform(scrollYProgress, [0, 0.5], [0, -100])
   const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
