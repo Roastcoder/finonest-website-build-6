@@ -1,43 +1,72 @@
 #!/bin/bash
 
-# VPS Deployment Script for Finonest
+# Finonest Deployment Script
+# This script deploys both frontend and backend applications
+
+set -e
+
 echo "🚀 Starting Finonest deployment..."
 
-# Update system
-sudo apt update && sudo apt upgrade -y
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
 
-# Install Node.js 20 LTS
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
+# Function to print colored output
+print_status() {
+    echo -e "${GREEN}[INFO]${NC} $1"
+}
 
-# Install MongoDB
-wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
-sudo apt-get update
-sudo apt-get install -y mongodb-org
+print_warning() {
+    echo -e "${YELLOW}[WARNING]${NC} $1"
+}
 
-# Install PM2
-sudo npm install -g pm2
+print_error() {
+    echo -e "${RED}[ERROR]${NC} $1"
+}
 
-# Start MongoDB
-sudo systemctl start mongod
-sudo systemctl enable mongod
+# Check if Node.js is installed
+if ! command -v node &> /dev/null; then
+    print_error "Node.js is not installed. Please install Node.js 18+ and try again."
+    exit 1
+fi
 
-# Install Nginx
-sudo apt install -y nginx
-
-# Clone and setup project
-git clone https://github.com/Roastcoder/FinonestReact.git
-cd FinonestReact
+# Check if MongoDB is running
+if ! pgrep -x "mongod" > /dev/null; then
+    print_warning "MongoDB is not running. Please start MongoDB before deployment."
+fi
 
 # Install dependencies
-npm install
+print_status "Installing dependencies..."
+npm run install:all
 
-# Build project
+# Build applications
+print_status "Building applications..."
 npm run build
-npm run build:server
 
-# Setup environment
-cp .env.example .env
+# Check if PM2 is installed for production deployment
+if command -v pm2 &> /dev/null; then
+    print_status "PM2 detected. Starting applications with PM2..."
+    
+    # Start backend with PM2
+    cd backend
+    pm2 start dist/index.js --name "finonest-backend" --env production
+    cd ..
+    
+    # Start frontend with PM2
+    cd frontend
+    pm2 start npm --name "finonest-frontend" -- start
+    cd ..
+    
+    print_status "Applications started with PM2"
+    pm2 status
+else
+    print_warning "PM2 not found. Starting applications in development mode..."
+    npm run start &
+fi
 
-echo "✅ Basic setup complete. Configure .env and start services."
+print_status "✅ Deployment completed successfully!"
+print_status "Frontend: http://localhost:3000"
+print_status "Backend: http://localhost:5000"
+print_status "Health Check: http://localhost:5000/health"

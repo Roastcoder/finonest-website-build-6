@@ -1,0 +1,46 @@
+{
+  "name": "finonest-backend",
+  "description": "Finonest Backend - Express.js API Server",
+  "repository": {
+    "url": "https://github.com/yourusername/finonest-backend.git",
+    "branch": "main"
+  },
+  "build": {
+    "command": "npm install && npm run build",
+    "outputDirectory": "dist"
+  },
+  "runtime": {
+    "command": "npm start",
+    "port": 5000
+  },
+  "environment": {
+    "NODE_ENV": "production",
+    "PORT": "5000",
+    "CLIENT_URL": "https://finonest.org",
+    "MONGODB_URI": "mongodb://localhost:27017/finonest_prod",
+    "JWT_SECRET": "your_production_jwt_secret_key_here_make_it_very_long_and_secure_change_this",
+    "JWT_EXPIRE": "7d",
+    "EMAIL_HOST": "smtp.gmail.com",
+    "EMAIL_PORT": "587",
+    "EMAIL_USER": "your_production_email@gmail.com",
+    "EMAIL_PASS": "your_production_email_password",
+    "CORS_ORIGIN": "https://finonest.org",
+    "RATE_LIMIT_WINDOW_MS": "900000",
+    "RATE_LIMIT_MAX": "100"
+  },
+  "domains": [
+    "api.finonest.org"
+  ],
+  "ssl": {
+    "enabled": true,
+    "provider": "letsencrypt"
+  },
+  "healthCheck": {
+    "path": "/health",
+    "interval": 30,
+    "timeout": 10
+  },
+  "dependencies": [
+    "mongodb"
+  ]
+}

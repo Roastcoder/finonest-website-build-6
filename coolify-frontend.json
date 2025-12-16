@@ -1,0 +1,35 @@
+{
+  "name": "finonest-frontend",
+  "description": "Finonest Frontend - Next.js Application",
+  "repository": {
+    "url": "https://github.com/yourusername/finonest-frontend.git",
+    "branch": "main"
+  },
+  "build": {
+    "command": "npm install && npm run build",
+    "outputDirectory": ".next"
+  },
+  "runtime": {
+    "command": "npm start",
+    "port": 3000
+  },
+  "environment": {
+    "NODE_ENV": "production",
+    "NEXT_PUBLIC_API_URL": "https://api.finonest.org",
+    "NEXT_PUBLIC_APP_URL": "https://finonest.org",
+    "NEXT_PUBLIC_APP_NAME": "Finonest"
+  },
+  "domains": [
+    "finonest.org",
+    "www.finonest.org"
+  ],
+  "ssl": {
+    "enabled": true,
+    "provider": "letsencrypt"
+  },
+  "healthCheck": {
+    "path": "/",
+    "interval": 30,
+    "timeout": 10
+  }
+}

@@ -1,61 +1,33 @@
 # Finonest - Complete MERN Financial Services Platform
 
-A comprehensive financial services platform built with Next.js, Express.js, MongoDB, and TypeScript.
+A comprehensive financial services platform with separate frontend (Next.js) and backend (Express.js) applications.
 
-## Features
+## 🏗️ Project Structure
 
-### Frontend (Next.js)
-- 🏠 Modern responsive design with Tailwind CSS
-- 🎯 Individual product pages that open in new tabs
-- 🚗 Car Valuation tool with instant calculations
-- 📱 Mobile-first responsive design
-- ⚡ Fast loading with optimized performance
-- 🎨 Beautiful animations with Framer Motion
+```
+finonest-website-build-6/
+├── frontend/                     # Next.js Frontend Application
+│   ├── app/                      # Next.js 13+ App Router
+│   ├── components/               # Reusable React components
+│   ├── hooks/                    # Custom React hooks
+│   ├── lib/                      # Utility functions and configurations
+│   ├── public/                   # Static assets
+│   ├── package.json              # Frontend dependencies
+│   └── .env.local                # Frontend environment variables
+├── backend/                      # Express.js Backend API
+│   ├── src/                      # TypeScript source code
+│   │   ├── config/               # Database and app configuration
+│   │   ├── controllers/          # Route controllers
+│   │   ├── models/               # MongoDB/Mongoose models
+│   │   ├── routes/               # API route definitions
+│   │   ├── middleware/           # Custom middleware
+│   │   └── index.ts              # Main server file
+│   ├── package.json              # Backend dependencies
+│   └── .env                      # Backend environment variables
+└── package.json                  # Root package.json for monorepo
+```
 
-### Backend (Express.js + MongoDB)
-- 🔐 JWT-based authentication
-- 👥 Role-based access control (Customer, Employee, Manager, Admin)
-- 📊 RESTful API design
-- 🛡️ Security middleware (Helmet, CORS, Rate Limiting)
-- 📝 Application management system
-- 🏪 Product management
-
-### Products Available
-1. **Car Valuation** - Instant AI-powered car value assessment
-2. **Personal Loans** - Quick personal financing
-3. **Home Loans** - Dream home financing
-4. **Business Loans** - Business growth capital
-5. **Credit Cards** - Premium rewards and benefits
-6. **Vehicle Loans** - Car and bike financing
-7. **Education Loans** - Study financing for India & abroad
-
-### Admin Panel Features
-- 📈 Dashboard with real-time statistics
-- 👤 User management
-- 🏷️ Product management
-- 📋 Application review and approval
-- 📊 Analytics and reporting
-
-## Tech Stack
-
-### Frontend
-- **Next.js 16** - React framework
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **Radix UI** - Component library
-- **Lucide React** - Icons
-
-### Backend
-- **Express.js** - Node.js framework
-- **MongoDB** - Database
-- **Mongoose** - ODM
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-- **Helmet** - Security headers
-- **CORS** - Cross-origin requests
-
-## Setup Instructions
+## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18+ installed
@@ -70,23 +42,28 @@ A comprehensive financial services platform built with Next.js, Express.js, Mong
    cd finonest-website-build-6
    ```
 
-2. **Install dependencies**
+2. **Install all dependencies**
    ```bash
-   npm install
+   npm run install:all
    ```
 
 3. **Environment Setup**
-   ```bash
-   cp .env.example .env
+   
+   **Frontend (.env.local):**
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:5000
+   NEXT_PUBLIC_APP_URL=http://localhost:3000
+   NEXT_PUBLIC_APP_NAME=Finonest
    ```
    
-   Update the `.env` file with your configuration:
+   **Backend (.env):**
    ```env
    NODE_ENV=development
    PORT=5000
    CLIENT_URL=http://localhost:3000
    MONGODB_URI=mongodb://localhost:27017/finonest
-   JWT_SECRET=your_jwt_secret_key_here
+   JWT_SECRET=your_jwt_secret_key_here_make_it_very_long_and_secure
+   JWT_EXPIRE=7d
    EMAIL_HOST=smtp.gmail.com
    EMAIL_PORT=587
    EMAIL_USER=your_email@gmail.com
@@ -105,36 +82,38 @@ A comprehensive financial services platform built with Next.js, Express.js, Mong
    net start MongoDB
    ```
 
-5. **Build the backend**
+5. **Start Development Servers**
    ```bash
-   npm run build:server
-   ```
-
-6. **Start the development servers**
-   ```bash
-   # Start both frontend and backend
+   # Start both frontend and backend concurrently
    npm run dev
    
    # Or start individually
-   npm run dev:client  # Frontend only (port 3000)
-   npm run dev:server  # Backend only (port 5000)
+   npm run dev:frontend  # Frontend only (http://localhost:3000)
+   npm run dev:backend   # Backend only (http://localhost:5000)
    ```
 
-### Production Deployment
+## 📦 Available Scripts
 
-1. **Build the application**
-   ```bash
-   npm run build
-   npm run build:server
-   ```
+### Root Level Commands
+- `npm run dev` - Start both frontend and backend in development mode
+- `npm run build` - Build both applications for production
+- `npm run start` - Start both applications in production mode
+- `npm run install:all` - Install dependencies for all packages
+- `npm run clean` - Clean all node_modules and build directories
 
-2. **Start production servers**
-   ```bash
-   npm start  # Frontend
-   npm run server  # Backend
-   ```
+### Frontend Commands (run from /frontend)
+- `npm run dev` - Start Next.js development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## API Endpoints
+### Backend Commands (run from /backend)
+- `npm run dev` - Start Express server with nodemon
+- `npm run build` - Compile TypeScript to JavaScript
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🔌 API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - User registration
@@ -155,71 +134,126 @@ A comprehensive financial services platform built with Next.js, Express.js, Mong
 - `GET /api/admin/applications` - Get all applications (Admin/Manager/Employee)
 - `PUT /api/admin/applications/:id/status` - Update application status
 
+### Car Valuation
+- `POST /api/car-valuation` - Get car valuation
+- `POST /api/rc-lookup` - RC number lookup
+
 ### Admin
 - `GET /api/admin/stats` - Dashboard statistics
 - `GET /api/admin/users` - Get all users
 - `PUT /api/admin/users/:id/role` - Update user role
 
-## Project Structure
+## 🛠️ Tech Stack
 
+### Frontend
+- **Next.js 16** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Radix UI** - Headless component library
+- **Lucide React** - Icon library
+
+### Backend
+- **Express.js** - Node.js web framework
+- **TypeScript** - Type safety
+- **MongoDB** - NoSQL database
+- **Mongoose** - MongoDB ODM
+- **JWT** - Authentication tokens
+- **bcryptjs** - Password hashing
+- **Helmet** - Security headers
+- **CORS** - Cross-origin resource sharing
+
+## 🔐 Security Features
+
+- JWT-based authentication
+- Password hashing with bcryptjs
+- Rate limiting
+- CORS configuration
+- Security headers with Helmet
+- Input validation
+- Role-based access control
+
+## 🌟 Key Features
+
+### Frontend Features
+- 🏠 Modern responsive design
+- 🎯 Individual product pages
+- 🚗 Car Valuation tool
+- 📱 Mobile-first design
+- ⚡ Optimized performance
+- 🎨 Smooth animations
+
+### Backend Features
+- 🔐 Secure authentication
+- 👥 Role-based access control
+- 📊 RESTful API design
+- 🛡️ Security middleware
+- 📝 Application management
+- 🏪 Product management
+
+### Products Available
+1. **Car Valuation** - AI-powered car value assessment
+2. **Personal Loans** - Quick personal financing
+3. **Home Loans** - Dream home financing
+4. **Business Loans** - Business growth capital
+5. **Credit Cards** - Premium rewards and benefits
+6. **Vehicle Loans** - Car and bike financing
+7. **Education Loans** - Study financing
+
+## 🚀 Production Deployment
+
+### Frontend Deployment
+```bash
+cd frontend
+npm run build
+npm start
 ```
-finonest-website-build-6/
-├── app/                          # Next.js app directory
-│   ├── (auth)/                   # Authentication pages
-│   ├── admin/                    # Admin pages
-│   │   └── dashboard/            # Admin dashboard
-│   ├── products/                 # Product pages
-│   │   ├── car-valuation/        # Car valuation tool
-│   │   ├── personal-loans/       # Personal loans page
-│   │   ├── home-loans/           # Home loans page
-│   │   ├── business-loans/       # Business loans page
-│   │   ├── credit-cards/         # Credit cards page
-│   │   ├── vehicle-loans/        # Vehicle loans page
-│   │   └── education-loans/      # Education loans page
-│   └── dashboard/                # User dashboards
-├── components/                   # Reusable components
-├── server/                       # Backend server
-│   └── src/
-│       ├── controllers/          # Route controllers
-│       ├── models/              # Database models
-│       ├── routes/              # API routes
-│       ├── middleware/          # Custom middleware
-│       └── config/              # Configuration files
-├── public/                      # Static assets
-└── styles/                      # Global styles
+
+### Backend Deployment
+```bash
+cd backend
+npm run build
+npm start
 ```
 
-## User Roles
+### Environment Variables for Production
+Update the environment variables for production:
 
-1. **Customer** - Can apply for loans, view applications
-2. **Employee** - Can review applications, manage customers
-3. **Manager** - Can approve/reject applications, manage team
-4. **Admin** - Full system access, user management, product management
+**Frontend:**
+```env
+NEXT_PUBLIC_API_URL=https://api.yourdomain.com
+NEXT_PUBLIC_APP_URL=https://yourdomain.com
+```
 
-## Features in Detail
+**Backend:**
+```env
+NODE_ENV=production
+PORT=5000
+CLIENT_URL=https://yourdomain.com
+MONGODB_URI=mongodb://your-production-db-url
+JWT_SECRET=your-very-secure-jwt-secret
+```
 
-### Car Valuation Tool
-- Instant market-based car valuation
-- AI-powered pricing algorithm
-- Support for all major car brands
-- Factors in age, mileage, condition, and location
-- Free unlimited valuations
+## 🧪 Development
 
-### Loan Management
-- Complete application workflow
-- Document upload and management
-- EMI calculators for all loan types
-- Status tracking and notifications
-- Automated eligibility checks
+### Adding New Features
+1. Frontend changes go in `/frontend`
+2. Backend changes go in `/backend`
+3. Shared types can be created in both directories
+4. API calls from frontend should use the configured API_BASE_URL
 
-### Admin Dashboard
-- Real-time statistics and analytics
-- Application management with approval workflow
-- User role management
-- Product catalog management
-- Comprehensive reporting
+### Database Models
+All MongoDB models are located in `/backend/src/models/`:
+- User.ts - User authentication and profiles
+- Product.ts - Financial products
+- Application.ts - Loan applications
+- SEOContent.ts - SEO content management
 
-## Contributing
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -227,10 +261,6 @@ finonest-website-build-6/
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
-
-This project is licensed under the MIT License.
-
-## Support
+## 📞 Support
 
 For support and questions, please contact the development team or create an issue in the repository.
