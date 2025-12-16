@@ -84,11 +84,9 @@ export default function ContactPage() {
     setTimeout(() => {
       setIsSubmitted(true)
     }, 1000)
-  }
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
@@ -97,25 +95,17 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <motion.span
             className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4"
-            }
-            }
           >
             Get In Touch
           </motion.span>
           <motion.h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#111111] mb-4 text-balance"
-            }
-            }
-            }
           >
             We're Here to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]">Help You</span>
           </motion.h1>
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
-            }
-            }
-            }
           >
             Have questions about our products or need assistance? Our team is ready to help you find the perfect
             financial solution.
@@ -125,9 +115,6 @@ export default function ContactPage() {
         {/* Contact Methods */}
         <div
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
-          }
-          }
-          }
         >
           {contactMethods.map((method, index) => (
             <motion.a
@@ -135,9 +122,6 @@ export default function ContactPage() {
               href={method.href}
               className="bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-xl hover:border-[#F4D86B]/30 transition-all group"
               whileHover={{ y: -5 }}
-              }
-              }
-              }
             >
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-colors"
@@ -156,9 +140,6 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div
             className="bg-white rounded-3xl p-8 md:p-10 shadow-xl shadow-black/5"
-            }
-            }
-            }
           >
             {!isSubmitted ? (
               <>
@@ -246,14 +227,9 @@ export default function ContactPage() {
             ) : (
               <div
                 className="text-center py-12"
-                }
-                }
               >
                 <div
                   className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                  }
-                  }
-                  }
                 >
                   <CheckCircle2 className="w-10 h-10 text-green-500" />
                 </div>
@@ -282,9 +258,6 @@ export default function ContactPage() {
                 <div
                   key={index}
                   className="bg-white rounded-2xl shadow-lg shadow-black/5 overflow-hidden border border-gray-100 hover:border-[#F4D86B]/30 transition-all"
-                  }
-                  }
-                  }
                 >
                   <button
                     onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
@@ -301,7 +274,6 @@ export default function ContactPage() {
                       height: expandedFaq === index ? "auto" : 0,
                       opacity: expandedFaq === index ? 1 : 0,
                     }}
-                    }
                     className="overflow-hidden"
                   >
                     <p className="px-6 pb-4 text-gray-600">{faq.answer}</p>
@@ -337,4 +309,3 @@ export default function ContactPage() {
       </div>
     </div>
   )
-}

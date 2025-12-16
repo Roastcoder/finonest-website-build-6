@@ -41,7 +41,6 @@ const statusConfig: Record<string, { label: string; color: string; icon: React.E
   processing: { label: "Processing", color: "bg-yellow-100 text-yellow-700", icon: Clock },
   rejected: { label: "Rejected", color: "bg-red-100 text-red-700", icon: XCircle },
   pending: { label: "Pending", color: "bg-gray-100 text-gray-700", icon: Clock },
-}
 
 export default function ApplicationsPage() {
   return (
@@ -77,9 +76,6 @@ export default function ApplicationsPage() {
               return (
                 <div
                   key={app.id}
-                  }
-                  }
-                  }
                   className="border rounded-xl p-4 hover:border-[#0064D6]/30 transition-colors"
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -113,4 +109,3 @@ export default function ApplicationsPage() {
       </Card>
     </div>
   )
-}

@@ -98,8 +98,6 @@ export default function AboutPage() {
 
         <div
           className="absolute top-20 left-10 w-64 h-64 bg-[#F4D86B]/10 rounded-full blur-3xl"
-          }
-          }
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,17 +105,12 @@ export default function AboutPage() {
             <div>
               <motion.span
                 className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-6"
-                }
-                }
               >
                 About Finonest
               </motion.span>
 
               <motion.h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#111111] mb-6 text-balance"
-                }
-                }
-                }
               >
                 Your Trusted{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]">
@@ -128,9 +121,6 @@ export default function AboutPage() {
 
               <motion.p
                 className="text-lg text-gray-600 mb-8 leading-relaxed"
-                }
-                }
-                }
               >
                 Finonest India Private Limited operates as a financial intermediary based in Jaipur, Rajasthan. We help
                 customers compare and apply for various loan products across multiple partner banks and NBFCs, making
@@ -139,9 +129,6 @@ export default function AboutPage() {
 
               <div
                 className="flex flex-wrap gap-6"
-                }
-                }
-                }
               >
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#FFB800]" />
@@ -160,9 +147,6 @@ export default function AboutPage() {
 
             <div
               className="relative"
-              }
-              }
-              }
             >
               <div className="relative bg-gradient-to-br from-[#0A1F44] to-[#000000] rounded-3xl p-8 text-white shadow-2xl">
                 <div className="absolute inset-0 bg-white/10 rounded-3xl blur-xl scale-95" />
@@ -233,18 +217,11 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <motion.span
               className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4"
-              }
-              }
-              }
             >
               Our Services
             </motion.span>
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-[#111111] text-balance"
-              }
-              }
-              }
-              }
             >
               Comprehensive Financial Solutions
             </motion.h2>
@@ -255,10 +232,6 @@ export default function AboutPage() {
               <div
                 key={service.name}
                 className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:border-[#F4D86B]/30 transition-all"
-                }
-                }
-                }
-                }
               >
                 <h3 className="text-lg font-bold text-[#111111] mb-2">{service.name}</h3>
                 <p className="text-gray-600 text-sm">{service.description}</p>
@@ -274,18 +247,11 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <motion.span
               className="inline-block px-4 py-2 bg-[#FFB800]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4"
-              }
-              }
-              }
             >
               Our Values
             </motion.span>
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-[#111111] text-balance"
-              }
-              }
-              }
-              }
             >
               What Drives Us Every Day
             </motion.h2>
@@ -316,18 +282,11 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-white mb-4"
-              }
-              }
-              }
             >
               Our Journey
             </motion.h2>
             <motion.p
               className="text-lg text-white/70"
-              }
-              }
-              }
-              }
             >
               Building trust since 2017
             </motion.p>
@@ -341,10 +300,6 @@ export default function AboutPage() {
                 <div
                   key={milestone.year}
                   className="relative"
-                  }
-                  }
-                  }
-                  }
                 >
                   <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/10 hover:bg-white/20 transition-all">
                     <div className="text-2xl font-bold text-[#F4D86B] mb-2">{milestone.year}</div>
@@ -364,18 +319,11 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <motion.span
               className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4"
-              }
-              }
-              }
             >
               Leadership Team
             </motion.span>
             <motion.h2
               className="text-3xl sm:text-4xl font-bold text-[#111111] text-balance"
-              }
-              }
-              }
-              }
             >
               Meet the People Behind Finonest
             </motion.h2>
@@ -386,10 +334,6 @@ export default function AboutPage() {
               <div
                 key={member.name}
                 className="text-center group"
-                }
-                }
-                }
-                }
               >
                 <div className="relative mb-4 mx-auto w-44 h-44">
                   <div className="absolute inset-0 rounded-full border-4 border-[#F4D86B]" />
@@ -466,4 +410,3 @@ export default function AboutPage() {
       </section>
     </div>
   )
-}

@@ -23,7 +23,6 @@ export default function UsersPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ role })
     })
-  }
 
   return (
     <div className="p-6">
@@ -77,4 +76,3 @@ export default function UsersPage() {
       </Card>
     </div>
   )
-}

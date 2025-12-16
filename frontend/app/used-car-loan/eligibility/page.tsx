@@ -26,7 +26,6 @@ export default function UsedCarLoanEligibilityPage() {
     if (!age || !employment || !income || !cibilScore || !carAge) {
       setEligibilityResult("incomplete")
       return
-    }
 
     const ageNum = parseInt(age)
     const incomeNum = parseInt(income)
@@ -40,36 +39,29 @@ export default function UsedCarLoanEligibilityPage() {
     if (employment === "salaried" && (ageNum < 21 || ageNum > 65)) {
       eligible = false
       issues.push("Age should be between 21-65 years for salaried")
-    }
     if (employment === "self-employed" && (ageNum < 25 || ageNum > 65)) {
       eligible = false
       issues.push("Age should be between 25-65 years for self-employed")
-    }
 
     // Income check
     if (employment === "salaried" && incomeNum < 25000) {
       eligible = false
       issues.push("Minimum income should be ₹25,000/month for salaried")
-    }
     if (employment === "self-employed" && incomeNum < 300000) {
       eligible = false
       issues.push("Minimum income should be ₹3 lakh/year for self-employed")
-    }
 
     // CIBIL check
     if (cibilNum < 650) {
       eligible = false
       issues.push("CIBIL score should be 650 or above")
-    }
 
     // Car age check
     if (carAgeNum > 7) {
       eligible = false
       issues.push("Car should not be older than 7 years")
-    }
 
     setEligibilityResult(eligible ? "eligible" : "not-eligible")
-  }
 
   const eligibilityCriteria = [
     {
@@ -101,7 +93,6 @@ export default function UsedCarLoanEligibilityPage() {
       salaried: "Up to 7 years old",
       selfEmployed: "Up to 7 years old",
       icon: <Car className="w-6 h-6 text-blue-600" />
-    }
   ]
 
   const additionalRequirements = [
@@ -140,7 +131,6 @@ export default function UsedCarLoanEligibilityPage() {
         "Ensure proper maintenance records",
         "Get professional car valuation"
       ]
-    }
   ]
 
   return (
@@ -377,4 +367,3 @@ export default function UsedCarLoanEligibilityPage() {
       </div>
     </>
   )
-}

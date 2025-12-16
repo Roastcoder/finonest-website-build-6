@@ -35,7 +35,6 @@ interface DashboardStats {
   totalApplications: number
   pendingApplications: number
   approvedApplications: number
-}
 
 interface Application {
   _id: string
@@ -46,7 +45,6 @@ interface Application {
   status: 'pending' | 'under_review' | 'approved' | 'rejected'
   createdAt: string
   reviewNotes?: string
-}
 
 interface User {
   _id: string
@@ -55,7 +53,6 @@ interface User {
   role: 'customer' | 'employee' | 'manager' | 'admin'
   isVerified: boolean
   createdAt: string
-}
 
 interface Product {
   _id: string
@@ -67,7 +64,6 @@ interface Product {
   tenure: string
   processingFee: string
   isActive: boolean
-}
 
 interface SEOContent {
   _id: string
@@ -76,7 +72,6 @@ interface SEOContent {
   description: string
   keywords: string
   content: string
-}
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState<DashboardStats>({
@@ -120,8 +115,6 @@ export default function AdminDashboard() {
       console.error('Error fetching data:', error)
     } finally {
       setLoading(false)
-    }
-  }
 
   const getStatusBadge = (status: string) => {
     const variants = {
@@ -129,9 +122,7 @@ export default function AdminDashboard() {
       under_review: 'bg-blue-100 text-blue-800',
       approved: 'bg-green-100 text-green-800',
       rejected: 'bg-red-100 text-red-800'
-    }
     return variants[status as keyof typeof variants] || 'bg-gray-100 text-gray-800'
-  }
 
   const updateApplicationStatus = async (id: string, newStatus: string, reviewNotes?: string) => {
     try {
@@ -143,22 +134,16 @@ export default function AdminDashboard() {
       if (res.ok) {
         const updatedApp = await res.json()
         setApplications(prev => prev.map(app => app._id === id ? updatedApp : app))
-      }
     } catch (error) {
       console.error('Error updating application:', error)
-    }
-  }
 
   const deleteUser = async (id: string) => {
     try {
       const res = await fetch(`/api/admin/users/${id}`, { method: 'DELETE' })
       if (res.ok) {
         setUsers(prev => prev.filter(user => user._id !== id))
-      }
     } catch (error) {
       console.error('Error deleting user:', error)
-    }
-  }
 
   const updateUserRole = async (id: string, role: string) => {
     try {
@@ -170,11 +155,8 @@ export default function AdminDashboard() {
       if (res.ok) {
         const updatedUser = await res.json()
         setUsers(prev => prev.map(user => user._id === id ? updatedUser : user))
-      }
     } catch (error) {
       console.error('Error updating user role:', error)
-    }
-  }
 
   const createProduct = async () => {
     try {
@@ -187,11 +169,8 @@ export default function AdminDashboard() {
         const product = await res.json()
         setProducts(prev => [...prev, product])
         setNewProduct({ title: '', description: '', rate: '', maxAmount: '', tenure: '', processingFee: '' })
-      }
     } catch (error) {
       console.error('Error creating product:', error)
-    }
-  }
 
   const updateProduct = async (id: string, data: Partial<Product>) => {
     try {
@@ -204,22 +183,16 @@ export default function AdminDashboard() {
         const updatedProduct = await res.json()
         setProducts(prev => prev.map(p => p._id === id ? updatedProduct : p))
         setEditingProduct(null)
-      }
     } catch (error) {
       console.error('Error updating product:', error)
-    }
-  }
 
   const deleteProduct = async (id: string) => {
     try {
       const res = await fetch(`/api/admin/products/${id}`, { method: 'DELETE' })
       if (res.ok) {
         setProducts(prev => prev.filter(p => p._id !== id))
-      }
     } catch (error) {
       console.error('Error deleting product:', error)
-    }
-  }
 
   const filteredApplications = applications.filter(app => {
     const matchesSearch = app.personalInfo?.fullName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -237,7 +210,6 @@ export default function AdminDashboard() {
         </div>
       </div>
     )
-  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -700,4 +672,3 @@ export default function AdminDashboard() {
       </div>
     </div>
   )
-}

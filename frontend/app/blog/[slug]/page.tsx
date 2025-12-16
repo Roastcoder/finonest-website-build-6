@@ -4,7 +4,6 @@ import { blogPosts } from '@/lib/blog-data'
 
 interface BlogPostPageProps {
   params: { slug: string }
-}
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const post = blogPosts.find(p => p.slug === params.slug)
@@ -12,8 +11,6 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   if (!post) {
     return {
       title: 'Blog Post Not Found | Finonest'
-    }
-  }
 
   return {
     title: `${post.title} | Finonest`,
@@ -28,16 +25,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     },
     alternates: {
       canonical: `https://finonest.com/blog/${post.slug}`
-    }
-  }
-}
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogPosts.find(p => p.slug === params.slug)
   
   if (!post) {
     notFound()
-  }
 
   return (
     <main className="min-h-screen bg-white pt-24">
@@ -70,10 +63,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
     </main>
   )
-}
 
 export function generateStaticParams() {
   return blogPosts.map(post => ({
     slug: post.slug
   }))
-}

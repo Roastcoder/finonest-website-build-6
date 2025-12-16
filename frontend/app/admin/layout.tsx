@@ -11,4 +11,3 @@ export default function AdminLayout({
       <main className="flex-1 overflow-auto">{children}</main>
     </div>
   )
-}

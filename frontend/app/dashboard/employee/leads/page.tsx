@@ -147,9 +147,6 @@ export default function LeadsPage() {
                 {filteredLeads.map((lead, index) => (
                   <motion.tr
                     key={lead.id}
-                    }
-                    }
-                    }
                     className="border-b last:border-0 hover:bg-gray-50"
                   >
                     <td className="py-3 px-4">
@@ -180,7 +177,6 @@ export default function LeadsPage() {
                             : lead.status === "warm"
                               ? "bg-orange-100 text-orange-700"
                               : "bg-gray-100 text-gray-700"
-                        }
                       >
                         {lead.status}
                       </Badge>
@@ -220,4 +216,3 @@ export default function LeadsPage() {
       </Card>
     </div>
   )
-}

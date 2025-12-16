@@ -48,7 +48,6 @@ export default function UsedCarValuationPage() {
       })
       setLoading(false)
     }, 2000)
-  }
 
   const valuationFactors = [
     {
@@ -86,7 +85,6 @@ export default function UsedCarValuationPage() {
       impact: "Medium",
       description: "High-demand models maintain better resale values",
       icon: <Search className="w-6 h-6 text-blue-600" />
-    }
   ]
 
   const valuationTips = [
@@ -431,4 +429,3 @@ export default function UsedCarValuationPage() {
       </div>
     </>
   )
-}

@@ -21,7 +21,6 @@ export default function UsedCarLoanPage() {
     const rate = 8.5 / 100 / 12
     const emiValue = (loanAmount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1)
     setEmi(Math.round(emiValue))
-  }
 
   const interestRates = [
     { category: "Excellent Credit (750+)", rate: "8.5% - 9.5%", processing: "0.5%" },
@@ -80,7 +79,6 @@ export default function UsedCarLoanPage() {
     {
       question: "How does car valuation impact my loan amount?",
       answer: "Car valuation determines the maximum loan amount you can get. Professional valuers assess the car's condition, age, mileage, and market value to determine the loan-to-value ratio."
-    }
   ]
 
   const schemaData = {
@@ -108,10 +106,7 @@ export default function UsedCarLoanPage() {
           "price": "8.5",
           "priceCurrency": "INR",
           "availability": "https://schema.org/InStock"
-        }
       ]
-    }
-  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -122,9 +117,7 @@ export default function UsedCarLoanPage() {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": faq.answer
-      }
     }))
-  }
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -141,9 +134,7 @@ export default function UsedCarLoanPage() {
         "position": 2,
         "name": "Used Car Loan",
         "item": "https://finonest.com/used-car-loan"
-      }
     ]
-  }
 
   return (
     <>
@@ -505,13 +496,9 @@ export default function UsedCarLoanPage() {
                   icon: <Users className="w-8 h-8 text-blue-600" />,
                   title: "Expert Support",
                   description: "Dedicated relationship manager for complete loan assistance"
-                }
               ].map((feature, index) => (
                 <div
                   key={index}
-                  }
-                  }
-                  }
                 >
                   <Card className="text-center h-full hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
@@ -588,4 +575,3 @@ export default function UsedCarLoanPage() {
       </div>
     </>
   )
-}

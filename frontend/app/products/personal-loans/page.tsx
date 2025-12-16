@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: 'Personal Loans - Instant Approval up to ₹25 Lakhs | Finonest',
   description: 'Get personal loans with instant approval, minimal documentation, and competitive rates starting from 10.5%. Apply online for amounts up to ₹25 lakhs.',
   keywords: 'personal loan, instant personal loan, online personal loan, quick approval, minimal documentation, competitive rates',
-}
 
 export default function PersonalLoansPage() {
   return (
@@ -74,4 +73,3 @@ export default function PersonalLoansPage() {
       </div>
     </div>
   )
-}

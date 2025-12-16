@@ -69,8 +69,6 @@ export default function EmployeeDashboard() {
       {/* Welcome & Target */}
       <div className="grid lg:grid-cols-3 gap-6">
         <div
-          }
-          }
           className="lg:col-span-2 bg-gradient-to-r from-[#0064D6] to-[#002E9C] rounded-2xl p-6 text-white"
         >
           <h2 className="text-2xl font-bold mb-2">Good Morning, Amit!</h2>
@@ -104,9 +102,6 @@ export default function EmployeeDashboard() {
         {stats.map((stat, index) => (
           <div
             key={stat.label}
-            }
-            }
-            }
           >
             <Card>
               <CardContent className="p-4">
@@ -244,4 +239,3 @@ export default function EmployeeDashboard() {
       </Card>
     </div>
   )
-}

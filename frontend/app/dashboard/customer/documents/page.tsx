@@ -20,7 +20,6 @@ const statusConfig: Record<string, { label: string; color: string; icon: React.E
   verified: { label: "Verified", color: "bg-green-100 text-green-700", icon: CheckCircle },
   pending: { label: "Pending", color: "bg-yellow-100 text-yellow-700", icon: Clock },
   rejected: { label: "Rejected", color: "bg-red-100 text-red-700", icon: AlertCircle },
-}
 
 export default function DocumentsPage() {
   return (
@@ -62,9 +61,6 @@ export default function DocumentsPage() {
               return (
                 <div
                   key={doc.id}
-                  }
-                  }
-                  }
                   className="flex items-center justify-between p-4 border rounded-xl hover:bg-gray-50 transition-colors"
                 >
                   <div className="flex items-center gap-4">
@@ -103,4 +99,3 @@ export default function DocumentsPage() {
       </Card>
     </div>
   )
-}

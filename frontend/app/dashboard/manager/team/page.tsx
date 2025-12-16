@@ -109,9 +109,6 @@ export default function TeamPage() {
             {teamMembers.map((member, index) => (
               <div
                 key={member.id}
-                }
-                }
-                }
                 className="border rounded-xl p-4 hover:border-[#0064D6]/30 transition-colors"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center gap-4">
@@ -191,4 +188,3 @@ export default function TeamPage() {
       </Card>
     </div>
   )
-}

@@ -25,7 +25,6 @@ export default function SignupPage() {
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords don't match")
       return
-    }
     
     // Simulate signup
     localStorage.setItem("finonest_logged_in", "true")
@@ -40,10 +39,8 @@ export default function SignupPage() {
       employee: "/dashboard/employee", 
       manager: "/dashboard/manager",
       admin: "/admin/dashboard"
-    }
     
     router.push(dashboards[formData.role as keyof typeof dashboards] || "/")
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center p-4">
@@ -129,4 +126,3 @@ export default function SignupPage() {
       </div>
     </div>
   )
-}

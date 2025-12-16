@@ -37,7 +37,6 @@ const courses = [
     rating: 4.7,
     students: 1200,
     modules: ["Business Valuation", "Funding Strategies", "Financial Analysis", "Risk Management", "Growth Hacking"]
-  }
 ]
 
 export default function FinoBizPage() {
@@ -228,4 +227,3 @@ export default function FinoBizPage() {
       </div>
     </div>
   )
-}

@@ -245,29 +245,20 @@ export default function ProductsPage() {
 
         <div
           className="absolute top-20 left-10 w-64 h-64 bg-[#F4D86B]/10 rounded-full blur-3xl"
-          }
-          }
         />
         <div
           className="absolute bottom-0 right-10 w-96 h-96 bg-[#FFB800]/10 rounded-full blur-3xl"
-          }
-          }
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.span
             className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-6"
-            }
-            }
           >
             Our Products
           </motion.span>
 
           <motion.h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#111111] mb-6 text-balance"
-            }
-            }
-            }
           >
             Financial Products{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]">
@@ -277,9 +268,6 @@ export default function ProductsPage() {
 
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
-            }
-            }
-            }
           >
             Explore our comprehensive range of financial products designed to meet every need. Competitive rates, quick
             approvals, and transparent processes.
@@ -296,10 +284,6 @@ export default function ProductsPage() {
                 key={product.id}
                 id={product.id}
                 className="scroll-mt-24"
-                }
-                }
-                }
-                }
               >
                 <div
                   className={`grid lg:grid-cols-2 gap-8 items-start ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
@@ -367,9 +351,6 @@ export default function ProductsPage() {
                     {/* Features */}
                     <div
                       className="bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all"
-                      }
-                      }
-                      }
                     >
                       <h3 className="text-lg font-bold text-[#111111] mb-4 flex items-center gap-2">
                         <Check className="w-5 h-5" style={{ color: product.color }} />
@@ -388,10 +369,6 @@ export default function ProductsPage() {
                     {/* Eligibility */}
                     <div
                       className="bg-white rounded-3xl p-6 shadow-lg shadow-black/5 border border-gray-100 hover:shadow-2xl hover:border-[#F4D86B]/30 transition-all"
-                      }
-                      }
-                      }
-                      }
                     >
                       <h3 className="text-lg font-bold text-[#111111] mb-4 flex items-center gap-2">
                         <FileText className="w-5 h-5" style={{ color: product.color }} />
@@ -410,10 +387,6 @@ export default function ProductsPage() {
                     {/* Quick info */}
                     <div
                       className="grid grid-cols-3 gap-4"
-                      }
-                      }
-                      }
-                      }
                     >
                       <div className="bg-gray-50 rounded-2xl p-4 text-center">
                         <Calculator className="w-5 h-5 mx-auto mb-2 text-gray-400" />
@@ -444,26 +417,15 @@ export default function ProductsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
-            }
-            }
-            }
           >
             Not Sure Which Product Is Right for You?
           </motion.h2>
           <motion.p
             className="text-lg text-white/80 mb-8"
-            }
-            }
-            }
-            }
           >
             Take our quick eligibility check to find the perfect financial product for your needs.
           </motion.p>
           <div
-            }
-            }
-            }
-            }
           >
             <Link href="/eligibility">
               <motion.button
@@ -482,4 +444,3 @@ export default function ProductsPage() {
       </section>
     </div>
   )
-}

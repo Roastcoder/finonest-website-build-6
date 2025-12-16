@@ -23,7 +23,6 @@ export default function HomePage() {
       <BankingPartners />
     </main>
   );
-}
 
 
 
@@ -45,7 +44,6 @@ function HeroBanner() {
       </section>
     </div>
   );
-}
 
 function TextRotator() {
   const [index, setIndex] = useState(0);
@@ -67,14 +65,11 @@ function TextRotator() {
         @keyframes slide-up {
           from { transform: translateY(100%); opacity: 0; }
           to { transform: translateY(0); opacity: 1; }
-        }
         .animate-slide-up-down {
           animation: slide-up 0.5s ease-out forwards;
-        }
       `}</style>
     </div>
   );
-}
 
 function MilestoneItem({ icon, value, suffix, label, width }: { icon: string, value: string, suffix: string, label: string, width?: number }) {
   return (
@@ -90,7 +85,6 @@ function MilestoneItem({ icon, value, suffix, label, width }: { icon: string, va
       </div>
     </div>
   );
-}
 
 function BannerCarousel() {
   const banners = [
@@ -111,7 +105,6 @@ function BannerCarousel() {
   const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
-    }
   };
 
   useEffect(() => {
@@ -132,7 +125,6 @@ function BannerCarousel() {
         </div>
       </div>
     );
-  }
 
   return (
     <div className="group relative w-full overflow-hidden rounded-xl">
@@ -174,7 +166,6 @@ function BannerCarousel() {
       </button>
     </div>
   );
-}
 
 
 
@@ -212,7 +203,6 @@ function CreditScoreBanner() {
       </div>
     </section>
   );
-}
 
 function FinancialProductsSection() {
   const products = [
@@ -270,7 +260,6 @@ function FinancialProductsSection() {
       </div>
     </section>
   );
-}
 
 function CreditCardsSection() {
   return (
@@ -424,7 +413,6 @@ function CreditCardsSection() {
       </div>
     </section>
   );
-}
 
 function LoanStepsSection() {
   return (
@@ -521,7 +509,6 @@ function LoanStepsSection() {
       </div>
     </section>
   );
-}
 
 function UserCheckIcon({ className }: { className?: string }) {
   return (
@@ -531,7 +518,6 @@ function UserCheckIcon({ className }: { className?: string }) {
       <polyline points="16 11 18 13 22 9" />
     </svg>
   );
-}
 
 function HandCoinsIcon({ className }: { className?: string }) {
   return (
@@ -543,7 +529,6 @@ function HandCoinsIcon({ className }: { className?: string }) {
       <circle cx="6" cy="5" r="3" />
     </svg>
   );
-}
 
 function ClipboardCheckIcon({ className }: { className?: string }) {
   return (
@@ -553,7 +538,6 @@ function ClipboardCheckIcon({ className }: { className?: string }) {
       <path d="m9 14 2 2 4-4" />
     </svg>
   );
-}
 
 function LandmarkIcon({ className }: { className?: string }) {
   return (
@@ -566,7 +550,6 @@ function LandmarkIcon({ className }: { className?: string }) {
       <polygon points="12 2 20 7 4 7" />
     </svg>
   );
-}
 
 function FinancialCalculators() {
   const calculators = [
@@ -630,7 +613,6 @@ function FinancialCalculators() {
       </div>
     </section>
   );
-}
 
 const LOCATIONS = [
   { top: "26%", left: "32%" }, { top: "34%", left: "26%" }, { top: "32%", left: "38%" }, { top: "36%", left: "55%" },
@@ -702,7 +684,6 @@ function TrustedPartnersSection() {
       </div>
     </section>
   );
-}
 
 function FAQSection() {
   return (
@@ -754,7 +735,6 @@ function FAQSection() {
       </div>
     </section>
   );
-}
 
 function Accordion() {
   const [openItem, setOpenItem] = React.useState<string | null>(null);
@@ -795,7 +775,6 @@ function Accordion() {
       })}
     </div>
   );
-}
 
 function ChevronDownIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -803,7 +782,6 @@ function ChevronDownIcon(props: React.SVGProps<SVGSVGElement>) {
       <path d="m6 9 6 6 6-6" />
     </svg>
   );
-}
 
 const partners = [
   { name: "HDFC Bank", short: "HDFC" }, { name: "L&T Financial Services", short: "L&T" }, { name: "Tata Capital", short: "Tata" },
@@ -862,7 +840,6 @@ function BankingPartners() {
       </div>
     </section>
   );
-}
 
 function Footer() {
   return (
@@ -957,7 +934,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
 
 function MostSearchedLinks() {
   return (
@@ -977,7 +953,6 @@ function MostSearchedLinks() {
       </div>
     </div>
   );
-}
 
 function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
   return (
@@ -985,13 +960,11 @@ function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
       {icon}
     </a>
   );
-}
 
 function FooterLink({ href, text }: { href: string; text: string }) {
   return (
     <a href={href} className="text-gray-400 hover:text-[#00BCD6] text-[12px] transition-colors block">{text}</a>
   );
-}
 
 function FloatIcon() {
   return (
@@ -1034,4 +1007,3 @@ function FloatIcon() {
       </div>
     </>
   );
-}

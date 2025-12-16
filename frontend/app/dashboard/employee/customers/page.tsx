@@ -66,9 +66,6 @@ export default function CustomersPage() {
             {customers.map((customer, index) => (
               <div
                 key={customer.id}
-                }
-                }
-                }
                 className="border rounded-xl p-4 hover:border-[#0064D6]/30 transition-colors"
               >
                 <div className="flex items-start justify-between mb-4">
@@ -136,4 +133,3 @@ export default function CustomersPage() {
       </Card>
     </div>
   )
-}

@@ -29,7 +29,6 @@ export default function UsedCarLoanEMICalculatorPage() {
     setEmi(Math.round(emiValue))
     setTotalInterest(Math.round(totalInterestValue))
     setTotalAmount(Math.round(totalAmountValue))
-  }
 
   useEffect(() => {
     calculateEMI()
@@ -66,7 +65,6 @@ export default function UsedCarLoanEMICalculatorPage() {
     {
       title: "Make Prepayments",
       description: "Prepay when possible to reduce interest burden and close loan early."
-    }
   ]
 
   return (
@@ -374,4 +372,3 @@ export default function UsedCarLoanEMICalculatorPage() {
       </div>
     </>
   )
-}

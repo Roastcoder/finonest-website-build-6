@@ -50,7 +50,6 @@ interface SEOContent {
     type: string;
     data: any;
   };
-}
 
 export default function UsedCarLoanPage() {
   const [loanAmount, setLoanAmount] = useState(500000)
@@ -65,11 +64,8 @@ export default function UsedCarLoanPage() {
         if (response.ok) {
           const data = await response.json()
           setSeoContent(data)
-        }
       } catch (error) {
         console.error('Error fetching SEO content:', error)
-      }
-    }
     
     fetchSEOContent()
   }, [])
@@ -78,7 +74,6 @@ export default function UsedCarLoanPage() {
     const rate = 8.5 / 100 / 12
     const emiValue = (loanAmount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1)
     setEmi(Math.round(emiValue))
-  }
 
   const defaultContent = {
     title: "Used Car Loan - Best Interest Rates Starting @ 8.5% | Finonest",
@@ -113,7 +108,6 @@ export default function UsedCarLoanPage() {
           title: "Flexible Tenure",
           description: "Repayment tenure up to 7 years for comfortable EMIs",
           icon: "users"
-        }
       ],
       benefits: [
         {
@@ -131,7 +125,6 @@ export default function UsedCarLoanPage() {
         {
           title: "Doorstep Service",
           description: "Document collection and verification at your convenience"
-        }
       ],
       eligibility: [
         {
@@ -149,7 +142,6 @@ export default function UsedCarLoanPage() {
         {
           criteria: "Credit Score",
           description: "CIBIL score of 650 and above preferred"
-        }
       ],
       faq: [
         {
@@ -167,7 +159,6 @@ export default function UsedCarLoanPage() {
         {
           question: "How is the loan amount calculated?",
           answer: "Loan amount is calculated based on the car's current market value, your income, and repayment capacity."
-        }
       ],
       testimonials: [
         {
@@ -179,7 +170,6 @@ export default function UsedCarLoanPage() {
           name: "Priya Sharma",
           review: "Excellent service and competitive interest rates. Highly recommend Finonest for car loans.",
           rating: 5
-        }
       ]
     },
     schema: {
@@ -198,10 +188,6 @@ export default function UsedCarLoanPage() {
           "price": "8.5",
           "priceCurrency": "INR",
           "availability": "https://schema.org/InStock"
-        }
-      }
-    }
-  }
 
   const content = seoContent || defaultContent
 
@@ -276,9 +262,6 @@ export default function UsedCarLoanPage() {
               {content.content.features.map((feature, index) => (
                 <div
                   key={index}
-                  }
-                  }
-                  }
                 >
                   <Card className="text-center h-full">
                     <CardContent className="p-6">
@@ -428,4 +411,3 @@ export default function UsedCarLoanPage() {
       </div>
     </>
   )
-}

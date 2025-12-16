@@ -18,7 +18,6 @@ export default function BusinessLoansPage() {
     const rate = 12 / 100 / 12
     const emiValue = (loanAmount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1)
     setEmi(Math.round(emiValue))
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
@@ -158,4 +157,3 @@ export default function BusinessLoansPage() {
       </div>
     </div>
   )
-}

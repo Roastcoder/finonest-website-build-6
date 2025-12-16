@@ -18,7 +18,6 @@ interface SEOContent {
   description: string
   keywords: string
   content: string
-}
 
 export default function SEOContentManagement() {
   const [seoContent, setSeoContent] = useState<SEOContent[]>([])
@@ -42,13 +41,10 @@ export default function SEOContentManagement() {
       if (res.ok) {
         const data = await res.json()
         setSeoContent(data)
-      }
     } catch (error) {
       console.error('Error fetching SEO content:', error)
     } finally {
       setLoading(false)
-    }
-  }
 
   const createSEOContent = async () => {
     try {
@@ -61,11 +57,8 @@ export default function SEOContentManagement() {
         const content = await res.json()
         setSeoContent(prev => [...prev, content])
         setNewContent({ page: '', title: '', description: '', keywords: '', content: '' })
-      }
     } catch (error) {
       console.error('Error creating SEO content:', error)
-    }
-  }
 
   const updateSEOContent = async (id: string, data: Partial<SEOContent>) => {
     try {
@@ -78,22 +71,16 @@ export default function SEOContentManagement() {
         const updatedContent = await res.json()
         setSeoContent(prev => prev.map(c => c._id === id ? updatedContent : c))
         setEditingContent(null)
-      }
     } catch (error) {
       console.error('Error updating SEO content:', error)
-    }
-  }
 
   const deleteSEOContent = async (id: string) => {
     try {
       const res = await fetch(`/api/admin/seo-content/${id}`, { method: 'DELETE' })
       if (res.ok) {
         setSeoContent(prev => prev.filter(c => c._id !== id))
-      }
     } catch (error) {
       console.error('Error deleting SEO content:', error)
-    }
-  }
 
   if (loading) {
     return (
@@ -104,7 +91,6 @@ export default function SEOContentManagement() {
         </div>
       </div>
     )
-  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -270,4 +256,3 @@ export default function SEOContentManagement() {
       </div>
     </div>
   )
-}

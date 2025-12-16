@@ -14,7 +14,6 @@ const pageData: Record<string, any> = {
   'products/vehicle-loans': () => import('../products/vehicle-loans/page').then(m => m.default),
   'products/education-loans': () => import('../products/education-loans/page').then(m => m.default),
   'products/car-valuation': () => import('../products/car-valuation/page').then(m => m.default)
-}
 
 export default async function DynamicPage({ params }: { params: { slug: string[] } }) {
   const slug = params.slug.join('/')
@@ -22,8 +21,6 @@ export default async function DynamicPage({ params }: { params: { slug: string[]
   
   if (!pageLoader) {
     notFound()
-  }
   
   const Component = await pageLoader()
   return <Component />
-}

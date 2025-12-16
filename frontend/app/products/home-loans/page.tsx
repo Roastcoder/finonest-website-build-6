@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: 'Home Loans - Low Interest Rates from 8.5% | Up to ₹5 Crores | Finonest',
   description: 'Get home loans with lowest interest rates starting from 8.5% p.a. Loan amounts up to ₹5 crores with flexible tenure up to 30 years. Apply online today!',
   keywords: 'home loan, housing loan, property loan, low interest rates, home financing, mortgage loan',
-}
 
 export default function HomeLoansPage() {
   return (
@@ -74,4 +73,3 @@ export default function HomeLoansPage() {
       </div>
     </div>
   )
-}

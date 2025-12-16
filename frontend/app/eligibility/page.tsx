@@ -80,21 +80,16 @@ export default function EligibilityPage() {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
-  }
 
   const nextStep = () => {
     if (currentStep < 4) {
       setCurrentStep((prev) => prev + 1)
     } else {
       calculateEligibility()
-    }
-  }
 
   const prevStep = () => {
     if (currentStep > 1) {
       setCurrentStep((prev) => prev - 1)
-    }
-  }
 
   const calculateEligibility = () => {
     // Simulated eligibility calculation
@@ -111,7 +106,6 @@ export default function EligibilityPage() {
       emi: `₹${Math.round(maxEMI).toLocaleString()}`,
     })
     setShowResult(true)
-  }
 
   const resetForm = () => {
     setCurrentStep(1)
@@ -130,7 +124,6 @@ export default function EligibilityPage() {
       loanAmount: "",
       tenure: "",
     })
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-24 pb-16">
@@ -139,16 +132,11 @@ export default function EligibilityPage() {
         <div className="text-center mb-12">
           <motion.span
             className="inline-block px-4 py-2 bg-[#F4D86B]/10 rounded-full text-[#0A1F44] text-sm font-medium mb-4"
-            }
-            }
           >
             Quick Eligibility Check
           </motion.span>
           <motion.h1
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#111111] mb-4 text-balance"
-            }
-            }
-            }
           >
             Check Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4D86B] to-[#FFB800]">
@@ -157,9 +145,6 @@ export default function EligibilityPage() {
           </motion.h1>
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
-            }
-            }
-            }
           >
             Answer a few simple questions to find out how much you can borrow and at what rate.
           </motion.p>
@@ -170,9 +155,6 @@ export default function EligibilityPage() {
             {/* Progress Steps */}
             <div
               className="flex items-center justify-center mb-12"
-              }
-              }
-              }
             >
               {steps.map((step, index) => (
                 <div key={step.id} className="flex items-center">
@@ -202,17 +184,12 @@ export default function EligibilityPage() {
             {/* Form Card */}
             <div
               className="bg-white rounded-3xl shadow-xl shadow-black/5 p-8 md:p-12"
-              }
-              }
-              }
             >
               <AnimatePresence mode="wait">
                 {/* Step 1: Personal Details */}
                 {currentStep === 1 && (
                   <div
                     key="step1"
-                    }
-                    }
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-6"
                   >
@@ -270,8 +247,6 @@ export default function EligibilityPage() {
                 {currentStep === 2 && (
                   <div
                     key="step2"
-                    }
-                    }
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-6"
                   >
@@ -321,8 +296,6 @@ export default function EligibilityPage() {
                 {currentStep === 3 && (
                   <div
                     key="step3"
-                    }
-                    }
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-6"
                   >
@@ -357,8 +330,6 @@ export default function EligibilityPage() {
                 {currentStep === 4 && (
                   <div
                     key="step4"
-                    }
-                    }
                     exit={{ opacity: 0, x: -20 }}
                     className="space-y-6"
                   >
@@ -470,16 +441,11 @@ export default function EligibilityPage() {
           /* Results */
           <div
             className="bg-white rounded-3xl shadow-xl shadow-black/5 p-8 md:p-12"
-            }
-            }
           >
             {eligibilityResult?.eligible ? (
               <div className="text-center">
                 <div
                   className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                  }
-                  }
-                  }
                 >
                   <CheckCircle2 className="w-10 h-10 text-green-500" />
                 </div>
@@ -490,27 +456,18 @@ export default function EligibilityPage() {
                 <div className="grid sm:grid-cols-3 gap-6 mb-8">
                   <div
                     className="bg-gradient-to-br from-[#F4D86B]/10 to-[#F4D86B]/20 rounded-3xl p-6"
-                    }
-                    }
-                    }
                   >
                     <div className="text-sm text-gray-500 mb-1">Maximum Amount</div>
                     <div className="text-3xl font-bold text-[#0A1F44]">{eligibilityResult.maxAmount}</div>
                   </div>
                   <div
                     className="bg-gradient-to-br from-[#FFB800]/10 to-[#FFB800]/20 rounded-3xl p-6"
-                    }
-                    }
-                    }
                   >
                     <div className="text-sm text-gray-500 mb-1">Interest Rate</div>
                     <div className="text-3xl font-bold text-[#FFB800]">{eligibilityResult.rate}</div>
                   </div>
                   <div
                     className="bg-gradient-to-br from-[#0A1F44]/10 to-[#0A1F44]/20 rounded-3xl p-6"
-                    }
-                    }
-                    }
                   >
                     <div className="text-sm text-gray-500 mb-1">Max EMI Capacity</div>
                     <div className="text-3xl font-bold text-[#0A1F44]">{eligibilityResult.emi}</div>
@@ -544,9 +501,6 @@ export default function EligibilityPage() {
               <div className="text-center">
                 <div
                   className="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                  }
-                  }
-                  }
                 >
                   <Calculator className="w-10 h-10 text-amber-500" />
                 </div>
@@ -584,4 +538,3 @@ export default function EligibilityPage() {
       </div>
     </div>
   )
-}

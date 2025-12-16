@@ -52,7 +52,6 @@ const statusConfig = {
   processing: { label: "Processing", color: "bg-blue-100 text-blue-700", icon: Clock },
   pending: { label: "Pending", color: "bg-yellow-100 text-yellow-700", icon: AlertCircle },
   rejected: { label: "Rejected", color: "bg-red-100 text-red-700", icon: XCircle },
-}
 
 export default function EmployeeApplicationsPage() {
   return (
@@ -107,9 +106,6 @@ export default function EmployeeApplicationsPage() {
             return (
               <div
                 key={app.id}
-                }
-                }
-                }
                 className="border rounded-xl p-4 hover:border-[#0064D6]/30 transition-colors"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -151,4 +147,3 @@ export default function EmployeeApplicationsPage() {
       </Card>
     </div>
   )
-}

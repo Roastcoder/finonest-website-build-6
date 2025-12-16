@@ -80,4 +80,3 @@ export default function ManagerSettingsPage() {
       </div>
     </div>
   )
-}

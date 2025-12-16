@@ -21,7 +21,6 @@ export default function EducationLoansPage() {
     const rate = 7.5 / 100 / 12
     const emiValue = (loanAmount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1)
     setEmi(Math.round(emiValue))
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
@@ -205,4 +204,3 @@ export default function EducationLoansPage() {
       </div>
     </div>
   )
-}

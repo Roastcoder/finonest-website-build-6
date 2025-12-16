@@ -28,7 +28,6 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "Can I get a loan for a car older than 5 years?",
           answer: "Yes, we provide loans for pre-owned cars up to 7 years old from the date of manufacture. However, loan amount and tenure may be reduced for older vehicles."
-        }
       ]
     },
     {
@@ -49,7 +48,6 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "What other charges are applicable?",
           answer: "Apart from interest and processing fees, you may need to pay for car valuation (₹2,000-₹5,000), documentation charges (₹500-₹1,000), and loan insurance if opted."
-        }
       ]
     },
     {
@@ -70,7 +68,6 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "Can I add a co-applicant to improve my eligibility?",
           answer: "Yes, adding a co-applicant with good credit score and stable income can improve your loan eligibility and may help you get better interest rates."
-        }
       ]
     },
     {
@@ -91,7 +88,6 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "Who bears the cost of car valuation and RC transfer?",
           answer: "Car valuation cost (₹2,000-₹5,000) is typically borne by the borrower. RC transfer costs (₹300-₹500) are also paid by the buyer along with applicable road tax and registration fees."
-        }
       ]
     },
     {
@@ -112,7 +108,6 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "Can I change the car after getting pre-approval?",
           answer: "Yes, you can change the car as long as it meets the loan criteria (age, value, condition). However, the final loan amount may change based on the new car's valuation."
-        }
       ]
     },
     {
@@ -133,9 +128,7 @@ export default function UsedCarLoanFAQPage() {
         {
           question: "Can I pay EMI through different modes?",
           answer: "Yes, you can pay EMI through auto-debit (ECS/NACH), online banking, mobile banking, cheque, or cash at our branches. Auto-debit is the most convenient option."
-        }
       ]
-    }
   ]
 
   const quickAnswers = [
@@ -165,7 +158,6 @@ export default function UsedCarLoanFAQPage() {
       description: "Instant chat support available",
       contact: "Chat Now",
       icon: <MessageCircle className="w-6 h-6 text-purple-600" />
-    }
   ]
 
   return (
@@ -333,4 +325,3 @@ export default function UsedCarLoanFAQPage() {
       </div>
     </>
   )
-}

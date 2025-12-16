@@ -35,10 +35,8 @@ function LoginForm() {
       employee: "/dashboard/employee", 
       manager: "/dashboard/manager",
       admin: "/admin/dashboard"
-    }
     
     router.push(dashboards[formData.role as keyof typeof dashboards] || "/")
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-teal-50 to-cyan-50 flex items-center justify-center p-4">
@@ -102,7 +100,6 @@ function LoginForm() {
       </div>
     </div>
   )
-}
 
 export default function LoginPage() {
   return (
@@ -110,4 +107,3 @@ export default function LoginPage() {
       <LoginForm />
     </Suspense>
   )
-}

@@ -55,7 +55,6 @@ export default function DashboardLayout({
       if (storedRole) setUserRole(storedRole)
     } catch (e) {
       // localStorage not available
-    }
   }, [])
 
   const handleLogout = () => {
@@ -65,10 +64,8 @@ export default function DashboardLayout({
       localStorage.removeItem("finonest_user_name")
     } catch (e) {
       // localStorage not available
-    }
     window.dispatchEvent(new Event("authChange"))
     router.push("/login")
-  }
 
   const roleConfig: Record<
     string,
@@ -76,7 +73,6 @@ export default function DashboardLayout({
       title: string
       color: string
       nav: { label: string; href: string; icon: React.ElementType }[]
-    }
   > = {
     customer: {
       title: "My Account",
@@ -122,7 +118,6 @@ export default function DashboardLayout({
         { label: "Settings", href: "/dashboard/admin/settings", icon: Settings },
       ],
     },
-  }
 
   const config = roleConfig[role] || roleConfig.customer
   const navItems = config.nav
@@ -264,4 +259,3 @@ export default function DashboardLayout({
       </div>
     </div>
   )
-}

@@ -46,7 +46,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-}
 
 export const dynamic = 'force-dynamic'
 
@@ -81,4 +80,3 @@ export default function RootLayout({
       </body>
     </html>
   )
-}

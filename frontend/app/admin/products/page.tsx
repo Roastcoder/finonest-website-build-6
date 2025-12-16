@@ -30,8 +30,6 @@ export default function ProductsPage() {
       const product = await res.json()
       setProducts(prev => [...prev, product])
       setNewProduct({ title: '', description: '', rate: '', maxAmount: '', tenure: '', processingFee: '' })
-    }
-  }
 
   return (
     <div className="p-6">
@@ -116,4 +114,3 @@ export default function ProductsPage() {
       </div>
     </div>
   )
-}

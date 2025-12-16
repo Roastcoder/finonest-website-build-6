@@ -30,8 +30,6 @@ export default function SEOContentPage() {
       const content = await res.json()
       setSeoContent(prev => [...prev, content])
       setNewContent({ page: '', title: '', description: '', keywords: '', content: '' })
-    }
-  }
 
   return (
     <div className="p-6">
@@ -124,4 +122,3 @@ export default function SEOContentPage() {
       </Card>
     </div>
   )
-}

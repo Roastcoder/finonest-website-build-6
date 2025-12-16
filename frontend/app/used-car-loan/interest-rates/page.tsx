@@ -36,7 +36,6 @@ export default function UsedCarLoanInterestRatesPage() {
       selfEmployed: "13.5% - 15.5%",
       processing: "2.0%",
       features: ["Higher rates", "Detailed assessment", "Comprehensive documentation"]
-    }
   ]
 
   const factorsAffectingRates = [
@@ -69,7 +68,6 @@ export default function UsedCarLoanInterestRatesPage() {
       factor: "Existing Relationship",
       impact: "Low",
       description: "Existing customers may get preferential rates"
-    }
   ]
 
   return (
@@ -257,4 +255,3 @@ export default function UsedCarLoanInterestRatesPage() {
       </div>
     </>
   )
-}

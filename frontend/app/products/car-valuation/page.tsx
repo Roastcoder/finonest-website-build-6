@@ -343,7 +343,6 @@ const CarValuationApp = () => {
       insurance: 'Comprehensive',
       serviceHistory: 'Available',
       accidents: 'None'
-    }
   });
 
   // --- Handlers ---
@@ -395,10 +394,8 @@ const CarValuationApp = () => {
                 data.fuel_type?.toLowerCase() === 'diesel' ? 'Diesel' :
                 data.fuel_type?.toLowerCase() === 'cng' ? 'CNG' : 'Petrol'
         }));
-      }
     } catch (error) {
       console.error('RC fetch error:', error);
-    }
   };
 
   const calculateValuation = async () => {
@@ -445,7 +442,6 @@ const CarValuationApp = () => {
         "positive_factors": ["Array of strings"],
         "negative_factors": ["Array of strings"],
         "demand_rating": "High/Medium/Low"
-      }
     `;
 
     try {
@@ -460,14 +456,11 @@ const CarValuationApp = () => {
             contents: [{ parts: [{ text: prompt }] }],
             generationConfig: {
               responseMimeType: "application/json"
-            }
           }),
-        }
       );
 
       if (!response.ok) {
         throw new Error(`API Error: ${response.statusText}`);
-      }
 
       const data = await response.json();
       const resultText = data.candidates?.[0]?.content?.parts?.[0]?.text;
@@ -478,7 +471,6 @@ const CarValuationApp = () => {
         setStep(3); // Move to result view
       } else {
         throw new Error("No valuation data received.");
-      }
 
     } catch (err) {
       console.error(err);
@@ -500,7 +492,6 @@ const CarValuationApp = () => {
       );
       if (modelKey) {
         baseValue = modelPricing[modelKey];
-      }
       
       // Brand multiplier (more conservative)
       const brandMultiplier = {
@@ -559,7 +550,6 @@ const CarValuationApp = () => {
       setStep(3);
     } finally {
       setLoading(false);
-    }
   };
 
   return (

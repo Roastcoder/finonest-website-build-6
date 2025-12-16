@@ -41,7 +41,6 @@ export default function UsedCarLoanDocumentsPage() {
         { name: "Pollution Certificate", required: true, description: "Valid PUC certificate" },
         { name: "Service Records", required: false, description: "Maintenance history if available" }
       ]
-    }
   ]
 
   const documentTips = [
@@ -64,7 +63,6 @@ export default function UsedCarLoanDocumentsPage() {
       title: "Verify Information",
       description: "Ensure all information matches across different documents",
       icon: <AlertCircle className="w-6 h-6 text-orange-600" />
-    }
   ]
 
   const rcTransferProcess = [
@@ -91,7 +89,6 @@ export default function UsedCarLoanDocumentsPage() {
       title: "Get New RC",
       description: "Receive new RC in buyer's name within 7-15 days",
       documents: ["New RC", "Updated insurance"]
-    }
   ]
 
   const commonMistakes = [
@@ -357,4 +354,3 @@ export default function UsedCarLoanDocumentsPage() {
       </div>
     </>
   )
-}

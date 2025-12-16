@@ -118,9 +118,6 @@ export default function ApprovalsPage() {
               {pendingApprovals.map((approval, index) => (
                 <div
                   key={approval.id}
-                  }
-                  }
-                  }
                   className="border rounded-xl p-4"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -169,9 +166,6 @@ export default function ApprovalsPage() {
               {completedApprovals.map((approval, index) => (
                 <div
                   key={approval.id}
-                  }
-                  }
-                  }
                   className="border rounded-xl p-4 opacity-75"
                 >
                   <div className="flex items-center justify-between">
@@ -189,7 +183,6 @@ export default function ApprovalsPage() {
                     <Badge
                       className={
                         approval.status === "approved" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
-                      }
                     >
                       {approval.status === "approved" ? (
                         <CheckCircle className="h-3 w-3 mr-1" />
@@ -207,4 +200,3 @@ export default function ApprovalsPage() {
       </Tabs>
     </div>
   )
-}
