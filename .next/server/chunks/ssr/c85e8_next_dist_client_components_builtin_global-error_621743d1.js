@@ -1,3 +1,0 @@
-module.exports=[26732,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(27264);a.n(d("[project]/Desktop/finonest-website-build-6/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},47432,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(27264);a.n(d("[project]/Desktop/finonest-website-build-6/node_modules/next/dist/client/components/builtin/global-error.js"))},34033,a=>{"use strict";a.i(26732);var b=a.i(47432);a.n(b)}];
-
-//# sourceMappingURL=c85e8_next_dist_client_components_builtin_global-error_621743d1.js.map

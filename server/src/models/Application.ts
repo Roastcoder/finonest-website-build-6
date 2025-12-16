@@ -14,20 +14,21 @@ export interface IApplication extends Document {
     pincode: string;
   };
   financialInfo: {
+    loanAmount: number;
     monthlyIncome: number;
     employmentType: string;
-    companyName?: string;
-    workExperience?: number;
-    loanAmount: number;
+    companyName: string;
+    workExperience: number;
   };
   documents: {
-    name: string;
-    url: string;
-    type: string;
-  }[];
+    panCard?: string;
+    aadharCard?: string;
+    salarySlips?: string[];
+    bankStatements?: string[];
+  };
   status: 'pending' | 'under_review' | 'approved' | 'rejected';
-  reviewedBy?: mongoose.Types.ObjectId;
   reviewNotes?: string;
+  reviewedBy?: mongoose.Types.ObjectId;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -46,20 +47,25 @@ const applicationSchema = new Schema<IApplication>({
     pincode: { type: String, required: true }
   },
   financialInfo: {
+    loanAmount: { type: Number, required: true },
     monthlyIncome: { type: Number, required: true },
     employmentType: { type: String, required: true },
-    companyName: { type: String },
-    workExperience: { type: Number },
-    loanAmount: { type: Number, required: true }
+    companyName: { type: String, required: true },
+    workExperience: { type: Number, required: true }
   },
-  documents: [{
-    name: { type: String, required: true },
-    url: { type: String, required: true },
-    type: { type: String, required: true }
-  }],
-  status: { type: String, enum: ['pending', 'under_review', 'approved', 'rejected'], default: 'pending' },
-  reviewedBy: { type: Schema.Types.ObjectId, ref: 'User' },
-  reviewNotes: { type: String }
+  documents: {
+    panCard: String,
+    aadharCard: String,
+    salarySlips: [String],
+    bankStatements: [String]
+  },
+  status: { 
+    type: String, 
+    enum: ['pending', 'under_review', 'approved', 'rejected'], 
+    default: 'pending' 
+  },
+  reviewNotes: String,
+  reviewedBy: { type: Schema.Types.ObjectId, ref: 'User' }
 }, { timestamps: true });
 
 export default mongoose.model<IApplication>('Application', applicationSchema);

@@ -1,34 +1,39 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { body, validationResult } from 'express-validator';
 import User from '../models/User';
 import { authenticate, AuthRequest } from '../middleware/auth';
 
 const router = express.Router();
 
 // Register
-router.post('/register', [
-  body('name').notEmpty().withMessage('Name is required'),
-  body('email').isEmail().withMessage('Valid email is required'),
-  body('password').isLength({ min: 6 }).withMessage('Password must be at least 6 characters'),
-], async (req: Request, res: Response) => {
+router.post('/register', async (req, res) => {
   try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-
     const { name, email, password, role = 'customer' } = req.body;
 
+    // Check if user exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: 'User already exists' });
     }
 
-    const user = new User({ name, email, password, role });
+    // Create user
+    const user = new User({
+      name,
+      email,
+      password,
+      role,
+      isVerified: role === 'admin' // Auto-verify admin users
+    });
+
     await user.save();
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET || 'fallback_secret', { expiresIn: '7d' });
+    // Generate JWT
+    const token = jwt.sign(
+      { userId: user._id },
+      process.env.JWT_SECRET!,
+      { expiresIn: '7d' }
+    );
 
     res.cookie('token', token, {
       httpOnly: true,
@@ -38,7 +43,14 @@ router.post('/register', [
 
     res.status(201).json({
       message: 'User created successfully',
-      user: { id: user._id, name: user.name, email: user.email, role: user.role }
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isVerified: user.isVerified
+      },
+      token
     });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
@@ -46,24 +58,28 @@ router.post('/register', [
 });
 
 // Login
-router.post('/login', [
-  body('email').isEmail().withMessage('Valid email is required'),
-  body('password').notEmpty().withMessage('Password is required'),
-], async (req: Request, res: Response) => {
+router.post('/login', async (req, res) => {
   try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-
     const { email, password } = req.body;
 
+    // Check if user exists
     const user = await User.findOne({ email });
-    if (!user || !(await user.comparePassword(password))) {
+    if (!user) {
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET || 'fallback_secret', { expiresIn: '7d' });
+    // Check password
+    const isMatch = await user.comparePassword(password);
+    if (!isMatch) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
+
+    // Generate JWT
+    const token = jwt.sign(
+      { userId: user._id },
+      process.env.JWT_SECRET!,
+      { expiresIn: '7d' }
+    );
 
     res.cookie('token', token, {
       httpOnly: true,
@@ -73,7 +89,31 @@ router.post('/login', [
 
     res.json({
       message: 'Login successful',
-      user: { id: user._id, name: user.name, email: user.email, role: user.role }
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isVerified: user.isVerified
+      },
+      token
+    });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// Get current user
+router.get('/me', authenticate, async (req: AuthRequest, res) => {
+  try {
+    res.json({
+      user: {
+        id: req.user!._id,
+        name: req.user!.name,
+        email: req.user!.email,
+        role: req.user!.role,
+        isVerified: req.user!.isVerified
+      }
     });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
@@ -83,19 +123,7 @@ router.post('/login', [
 // Logout
 router.post('/logout', (req, res) => {
   res.clearCookie('token');
-  res.json({ message: 'Logout successful' });
-});
-
-// Get current user
-router.get('/me', authenticate, (req: AuthRequest, res) => {
-  res.json({
-    user: {
-      id: req.user!._id,
-      name: req.user!.name,
-      email: req.user!.email,
-      role: req.user!.role
-    }
-  });
+  res.json({ message: 'Logged out successfully' });
 });
 
 export default router;

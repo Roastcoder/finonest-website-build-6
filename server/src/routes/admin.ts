@@ -2,6 +2,7 @@ import express from 'express';
 import User from '../models/User';
 import Product from '../models/Product';
 import Application from '../models/Application';
+import SEOContent from '../models/SEOContent';
 import { authenticate, authorize, AuthRequest } from '../middleware/auth';
 
 const router = express.Router();
@@ -89,6 +90,120 @@ router.put('/applications/:id/status', authenticate, authorize('admin', 'manager
     }
     
     res.json(application);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// Product Management
+router.get('/products', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const products = await Product.find();
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.post('/products', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const product = new Product(req.body);
+    await product.save();
+    res.status(201).json(product);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.put('/products/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!product) {
+      return res.status(404).json({ message: 'Product not found' });
+    }
+    res.json(product);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.delete('/products/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const product = await Product.findByIdAndDelete(req.params.id);
+    if (!product) {
+      return res.status(404).json({ message: 'Product not found' });
+    }
+    res.json({ message: 'Product deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// SEO Content Management
+router.get('/seo-content', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const seoContent = await SEOContent.find();
+    res.json(seoContent);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.post('/seo-content', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const seoContent = new SEOContent(req.body);
+    await seoContent.save();
+    res.status(201).json(seoContent);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.put('/seo-content/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const seoContent = await SEOContent.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!seoContent) {
+      return res.status(404).json({ message: 'SEO content not found' });
+    }
+    res.json(seoContent);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+router.delete('/seo-content/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const seoContent = await SEOContent.findByIdAndDelete(req.params.id);
+    if (!seoContent) {
+      return res.status(404).json({ message: 'SEO content not found' });
+    }
+    res.json({ message: 'SEO content deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// Delete user
+router.delete('/users/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const user = await User.findByIdAndDelete(req.params.id);
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    res.json({ message: 'User deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
+// Delete application
+router.delete('/applications/:id', authenticate, authorize('admin'), async (req, res) => {
+  try {
+    const application = await Application.findByIdAndDelete(req.params.id);
+    if (!application) {
+      return res.status(404).json({ message: 'Application not found' });
+    }
+    res.json({ message: 'Application deleted successfully' });
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }

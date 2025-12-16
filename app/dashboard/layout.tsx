@@ -137,8 +137,9 @@ export default function DashboardLayout({
       {/* Sidebar - fixed position with proper z-index */}
       <aside
         className={cn(
-          "fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 z-50 transform transition-transform duration-300 lg:translate-x-0",
-          sidebarOpen ? "translate-x-0" : "-translate-x-full",
+          "fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 z-50 transform transition-transform duration-300",
+          "lg:translate-x-0", // Always visible on desktop
+          sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0", // Hidden on mobile when closed, but always visible on desktop
         )}
       >
         <div className="flex flex-col h-full">

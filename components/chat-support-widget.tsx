@@ -17,10 +17,10 @@ export function ChatSupportWidget() {
   useEffect(() => {
     if (isOpen) return
 
-    // Initial show after 3 seconds
+    // Initial show after 1 second for testing
     const showTimer = setTimeout(() => {
       setShowPeek(true)
-    }, 3000)
+    }, 1000)
 
     return () => clearTimeout(showTimer)
   }, [isOpen])
@@ -67,7 +67,7 @@ export function ChatSupportWidget() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 200, opacity: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="fixed right-0 bottom-36 md:bottom-32 z-50 cursor-pointer"
+            className="fixed right-0 bottom-36 md:bottom-32 z-[9999] cursor-pointer"
             onClick={() => {
               setShowPeek(false)
               setIsOpen(true)
@@ -212,7 +212,7 @@ export function ChatSupportWidget() {
           setShowPeek(false)
           setIsOpen(!isOpen)
         }}
-        className={`fixed right-4 bottom-24 md:bottom-4 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg flex items-center justify-center transition-colors ${
+        className={`fixed right-4 bottom-24 md:bottom-4 z-[9998] w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg flex items-center justify-center transition-colors ${
           isOpen ? "bg-slate-700" : "bg-teal-500 hover:bg-teal-600"
         }`}
       >

@@ -9,6 +9,7 @@ import authRoutes from './routes/auth';
 import productRoutes from './routes/products';
 import adminRoutes from './routes/admin';
 import userRoutes from './routes/users';
+import seoRoutes from './routes/seo';
 
 dotenv.config();
 
@@ -42,6 +43,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/seo', seoRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

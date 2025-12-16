@@ -36,7 +36,7 @@ const footerLinks = {
   ],
   resources: [
     { label: "Blog", href: "/blog" },
-    { label: "EMI Calculator", href: "/eligibility" },
+    { label: "EMI Calculator", href: "/eligibility#calculator" },
     { label: "Check Eligibility", href: "/eligibility" },
     { label: "FAQs", href: "/about#faq" },
     { label: "Customer Support", href: "/contact" },

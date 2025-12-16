@@ -1,221 +1,75 @@
-"use client"
+import type { Metadata } from 'next'
 
-
-
-"use client"
-
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Home, Calculator, FileText, CheckCircle, ArrowRight, Phone, Mail, Shield, Clock, Award, TrendingUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { EMICalculator } from "@/components/emi-calculator"
-import Link from "next/link"
+export const metadata: Metadata = {
+  title: 'Home Loans - Low Interest Rates from 8.5% | Up to ₹5 Crores | Finonest',
+  description: 'Get home loans with lowest interest rates starting from 8.5% p.a. Loan amounts up to ₹5 crores with flexible tenure up to 30 years. Apply online today!',
+  keywords: 'home loan, housing loan, property loan, low interest rates, home financing, mortgage loan',
+}
 
 export default function HomeLoansPage() {
-  const [loanAmount, setLoanAmount] = useState(2500000)
-  const [tenure, setTenure] = useState(240)
-  const [emi, setEmi] = useState(0)
-
-  const calculateEMI = () => {
-    const rate = 8.5 / 100 / 12
-    const emiValue = (loanAmount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1)
-    setEmi(Math.round(emiValue))
-  }
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/products" className="text-[#0A1F44] hover:text-[#F4D86B] flex items-center gap-2 transition-colors">
-              ← Back to Products
-            </Link>
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-[#F4D86B] to-[#FFB800] bg-clip-text text-transparent">Home Loans</h1>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-2 gap-12">
-          <motion.div 
-            initial={{ opacity: 0, x: -50, rotateY: -15 }} 
-            animate={{ opacity: 1, x: 0, rotateY: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-6"
-          >
-            <Card className="rounded-3xl shadow-lg hover:shadow-2xl transition-all">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl">
-                  <Home className="w-6 h-6 text-[#F4D86B]" />
-                  Home Loans - Make Your Dream Home Reality
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-6">
-                  Affordable home loans with the longest tenure and lowest interest rates. 
-                  Turn your dream of owning a home into reality with our flexible financing options.
-                </p>
-                
-                <div className="grid grid-cols-3 gap-4 mb-6">
-                  <motion.div 
-                    className="bg-gradient-to-br from-[#F4D86B]/10 to-[#F4D86B]/20 p-4 rounded-2xl text-center"
-                    initial={{ opacity: 0, y: 20, rotateX: -15 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                    whileHover={{ scale: 1.05, rotateZ: 2 }}
-                  >
-                    <div className="text-2xl font-bold text-[#0A1F44]">8.5%</div>
-                    <div className="text-sm text-gray-600">Interest Rate (p.a.)</div>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-gradient-to-br from-[#FFB800]/10 to-[#FFB800]/20 p-4 rounded-2xl text-center"
-                    initial={{ opacity: 0, y: 20, rotateX: -15 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    whileHover={{ scale: 1.05, rotateZ: -2 }}
-                  >
-                    <div className="text-2xl font-bold text-[#0A1F44]">₹5Cr</div>
-                    <div className="text-sm text-gray-600">Max Amount</div>
-                  </motion.div>
-                  <motion.div 
-                    className="bg-gradient-to-br from-[#0A1F44]/10 to-[#0A1F44]/20 p-4 rounded-2xl text-center"
-                    initial={{ opacity: 0, y: 20, rotateX: -15 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    transition={{ duration: 0.6, delay: 0.5 }}
-                    whileHover={{ scale: 1.05, rotateZ: 2 }}
-                  >
-                    <div className="text-2xl font-bold text-[#0A1F44]">30yrs</div>
-                    <div className="text-sm text-gray-600">Max Tenure</div>
-                  </motion.div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-gray-900">Key Features:</h3>
-                  <ul className="space-y-2">
-                    <motion.li 
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#F4D86B]/10 transition-colors"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.6 }}
-                      whileHover={{ x: 5, scale: 1.02 }}
-                    >
-                      <TrendingUp className="w-5 h-5 text-[#F4D86B]" />
-                      <span className="text-sm font-medium">Lowest interest rates in market</span>
-                    </motion.li>
-                    <motion.li 
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#FFB800]/10 transition-colors"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.7 }}
-                      whileHover={{ x: 5, scale: 1.02 }}
-                    >
-                      <Shield className="w-5 h-5 text-[#FFB800]" />
-                      <span className="text-sm font-medium">Up to 90% financing</span>
-                    </motion.li>
-                    <motion.li 
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#0A1F44]/10 transition-colors"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.8 }}
-                      whileHover={{ x: 5, scale: 1.02 }}
-                    >
-                      <ArrowRight className="w-5 h-5 text-[#0A1F44]" />
-                      <span className="text-sm font-medium">Balance transfer facility</span>
-                    </motion.li>
-                    <motion.li 
-                      className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#F4D86B]/10 transition-colors"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.5, delay: 0.9 }}
-                      whileHover={{ x: 5, scale: 1.02 }}
-                    >
-                      <Award className="w-5 h-5 text-[#F4D86B]" />
-                      <span className="text-sm font-medium">Tax benefits under Section 80C</span>
-                    </motion.li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="rounded-3xl shadow-lg">
-              <CardHeader>
-                <CardTitle>Eligibility Criteria</CardTitle>
-              </CardHeader>
-              <CardContent>
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="container mx-auto px-4">
+        <h1 className="text-4xl font-bold text-center mb-8">Home Loans</h1>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-semibold mb-4">Make Your Dream Home a Reality</h2>
+            <p className="text-gray-600 mb-6">
+              Affordable home loans with the longest tenure and lowest interest rates starting from 8.5% per annum.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Key Features</h3>
                 <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#F4D86B] rounded-full"></div>
-                    <span className="text-sm">Age: 23-65 years</span>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Loan amount up to ₹5 Crores
                   </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#FFB800] rounded-full"></div>
-                    <span className="text-sm">Minimum income: ₹40,000/month</span>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Interest rates from 8.5% p.a.
                   </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#0A1F44] rounded-full"></div>
-                    <span className="text-sm">Employment: 2+ years experience</span>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Tenure: 5-30 years
                   </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#F4D86B] rounded-full"></div>
-                    <span className="text-sm">Property: Within city limits</span>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Up to 90% financing
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 50, rotateY: 15 }} 
-            animate={{ opacity: 1, x: 0, rotateY: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="space-y-6"
-          >
-            <EMICalculator 
-              productType="Home Loan"
-              defaultAmount={2500000}
-              defaultTenure={240}
-              defaultRate={8.5}
-              maxAmount={50000000}
-              maxTenure={360}
-            />
-
-            <Card className="bg-gradient-to-br from-[#F4D86B]/10 to-[#FFB800]/10 border-2 border-[#F4D86B]/30 rounded-3xl shadow-xl">
-              <CardContent className="pt-6">
-                <h3 className="font-bold text-[#0A1F44] mb-4 text-center text-xl">Ready to Apply?</h3>
-                <div className="space-y-3">
-                  <Link href="/eligibility">
-                    <motion.div
-                      whileHover={{ scale: 1.02, rotateZ: 1 }}
-                      whileTap={{ scale: 0.98, rotateZ: -1 }}
-                      transition={{ type: "spring", stiffness: 400 }}
-                    >
-                      <Button className="w-full bg-gradient-to-r from-[#F4D86B] to-[#FFB800] hover:from-[#FFB800] hover:to-[#F4D86B] text-[#0A1F44] py-3 rounded-2xl shadow-lg hover:shadow-2xl transition-all font-bold">
-                        <FileText className="w-4 h-4 mr-2" />
-                        Apply Online Now
-                      </Button>
-                    </motion.div>
-                  </Link>
-                  <div className="text-center text-sm text-gray-600">Or contact us directly</div>
-                  <div className="flex gap-2">
-                    <Link href="tel:+911234567890" className="flex-1">
-                      <Button variant="outline" className="w-full border-[#0A1F44] text-[#0A1F44] hover:bg-[#0A1F44]/10 rounded-xl">
-                        <Phone className="w-4 h-4 mr-2" />
-                        Call Now
-                      </Button>
-                    </Link>
-                    <Link href="mailto:support@finonest.com" className="flex-1">
-                      <Button variant="outline" className="w-full border-[#F4D86B] text-[#F4D86B] hover:bg-[#F4D86B]/10 rounded-xl">
-                        <Mail className="w-4 h-4 mr-2" />
-                        Email Us
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold mb-4">Benefits</h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                    Tax benefits under Section 80C
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                    Balance transfer facility
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                    Top-up loan available
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                    Quick approval in 48 hours
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                Apply Now
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -145,115 +145,6 @@ export function Navigation() {
 
   return (
     <>
-      {/* Top bar */}
-      <div className="hidden lg:block bg-gradient-to-r from-[#002E9C] to-[#0064D6] text-white py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:1800-123-4567" className="flex items-center gap-2 hover:text-[#12D6E7] transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>1800-123-4567 (Toll Free)</span>
-            </a>
-            <a
-              href="mailto:support@finonest.com"
-              className="flex items-center gap-2 hover:text-[#12D6E7] transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              <span>support@finonest.com</span>
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="relative" ref={userMenuRef}>
-              <button
-                onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                className="flex items-center gap-2 hover:text-[#12D6E7] transition-colors"
-              >
-                <div className={cn(
-                  "w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold",
-                  isLoggedIn && currentRole ? currentRole.color : "bg-gradient-to-r from-[#0064D6] to-[#002E9C]"
-                )}>
-                  {isLoggedIn && userName ? userName.charAt(0).toUpperCase() : "G"}
-                </div>
-                <span className="font-medium">{isLoggedIn && userName ? userName : "Login"}</span>
-                <ChevronDown className={cn("w-4 h-4 transition-transform", isUserMenuOpen && "rotate-180")} />
-              </button>
-
-              <AnimatePresence>
-                {isUserMenuOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute right-0 top-full mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-[60]"
-                  >
-                    {isLoggedIn && currentRole ? (
-                      <>
-                        <div className="p-3 border-b border-gray-100 bg-gray-50">
-                          <p className="font-semibold text-gray-900">{userName || "User"}</p>
-                          <p className="text-xs text-gray-500 flex items-center gap-1.5 mt-0.5">
-                            <span className={cn("w-2 h-2 rounded-full", currentRole.color)} />
-                            {currentRole.label}
-                          </p>
-                        </div>
-                        <div className="py-1">
-                          <Link
-                            href={currentRole.dashboard}
-                            onClick={() => setIsUserMenuOpen(false)}
-                            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                          >
-                            <LayoutDashboard className="w-4 h-4 text-gray-400" />
-                            Dashboard
-                          </Link>
-                          <Link
-                            href={`${currentRole.dashboard}/settings`}
-                            onClick={() => setIsUserMenuOpen(false)}
-                            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                          >
-                            <Settings className="w-4 h-4 text-gray-400" />
-                            Settings
-                          </Link>
-                        </div>
-                        <div className="border-t border-gray-100 py-1">
-                          <button
-                            onClick={handleLogout}
-                            className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 transition-colors"
-                          >
-                            <LogOut className="w-4 h-4" />
-                            Logout
-                          </button>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="py-1">
-                          <Link
-                            href="/login"
-                            onClick={() => setIsUserMenuOpen(false)}
-                            className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 transition-colors font-medium"
-                          >
-                            <User className="w-4 h-4 text-blue-600" />
-                            Login
-                          </Link>
-                          <Link
-                            href="/signup"
-                            onClick={() => setIsUserMenuOpen(false)}
-                            className="flex items-center gap-3 px-4 py-2.5 text-sm text-blue-600 hover:bg-blue-50 transition-colors font-medium"
-                          >
-                            <User className="w-4 h-4" />
-                            Sign Up
-                          </Link>
-                        </div>
-                      </>
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <motion.header
         className={cn(
           "sticky top-0 left-0 right-0 z-40",
@@ -283,30 +174,24 @@ export function Navigation() {
                 />
               </motion.div>
             </Link>
-
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
-                <div
-                  key={item.href}
-                  className="relative"
-                  onMouseEnter={() => item.submenu && setActiveSubmenu(item.href)}
-                  onMouseLeave={() => setActiveSubmenu(null)}
-                >
+                <div key={item.href} className="relative group">
                   <Link
                     href={item.href}
                     className={cn(
-                      "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1",
+                      "flex items-center gap-1 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg",
                       pathname === item.href
                         ? "text-[#0064D6] bg-[#0064D6]/5"
-                        : "text-gray-700 hover:text-[#0064D6] hover:bg-gray-50",
+                        : "text-gray-700 hover:text-[#0064D6] hover:bg-[#0064D6]/5",
                     )}
+                    onMouseEnter={() => item.submenu && setActiveSubmenu(item.href)}
+                    onMouseLeave={() => setActiveSubmenu(null)}
                   >
                     {item.label}
                     {item.submenu && (
-                      <ChevronDown
-                        className={cn("w-4 h-4 transition-transform", activeSubmenu === item.href && "rotate-180")}
-                      />
+                      <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                     )}
                   </Link>
 
@@ -314,10 +199,13 @@ export function Navigation() {
                     <AnimatePresence>
                       {activeSubmenu === item.href && (
                         <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          className="absolute top-full left-0 mt-1 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
+                          initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                          animate={{ opacity: 1, y: 0, scale: 1 }}
+                          exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                          transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                          className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
+                          onMouseEnter={() => setActiveSubmenu(item.href)}
+                          onMouseLeave={() => setActiveSubmenu(null)}
                         >
                           {item.submenu.map((subItem) => (
                             <Link
@@ -354,12 +242,68 @@ export function Navigation() {
                   </Link>
                 </>
               ) : (
-                <Link
-                  href="/eligibility"
-                  className="px-5 py-2.5 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-[#0064D6]/25 transition-all duration-300"
-                >
-                  Check Eligibility
-                </Link>
+                <div className="flex items-center gap-3">
+                  <Link
+                    href="/eligibility"
+                    className="px-5 py-2.5 bg-gradient-to-r from-[#0064D6] to-[#002E9C] text-white rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-[#0064D6]/25 transition-all duration-300"
+                  >
+                    Check Eligibility
+                  </Link>
+                  {currentRole && (
+                    <div className="relative" ref={userMenuRef}>
+                      <button
+                        onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                        className={cn(
+                          "w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold transition-all",
+                          currentRole.color,
+                          "hover:scale-105"
+                        )}
+                      >
+                        {userName?.charAt(0).toUpperCase() || "U"}
+                      </button>
+                      <AnimatePresence>
+                        {isUserMenuOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                            className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
+                          >
+                            <div className="p-3 border-b border-gray-100">
+                              <p className="text-sm font-medium text-gray-900">{userName}</p>
+                              <p className="text-xs text-gray-500">{currentRole.label}</p>
+                            </div>
+                            <div className="py-1">
+                              <Link
+                                href={currentRole.dashboard}
+                                className="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                onClick={() => setIsUserMenuOpen(false)}
+                              >
+                                <LayoutDashboard className="w-4 h-4" />
+                                Dashboard
+                              </Link>
+                              <Link
+                                href="/profile"
+                                className="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                                onClick={() => setIsUserMenuOpen(false)}
+                              >
+                                <Settings className="w-4 h-4" />
+                                Settings
+                              </Link>
+                              <button
+                                onClick={handleLogout}
+                                className="flex items-center gap-2 w-full px-3 py-2 text-sm text-red-600 hover:bg-red-50"
+                              >
+                                <LogOut className="w-4 h-4" />
+                                Logout
+                              </button>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  )}
+                </div>
               )}
             </div>
 

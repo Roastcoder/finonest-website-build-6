@@ -1,25 +1,12 @@
-import express, { Response } from 'express';
+import express from 'express';
 import Application from '../models/Application';
-import { authenticate, AuthRequest } from '../middleware/auth';
-import { body, validationResult } from 'express-validator';
+import { authenticate, authorize, AuthRequest } from '../middleware/auth';
 
 const router = express.Router();
 
 // Submit application
-router.post('/applications', authenticate, [
-  body('productId').notEmpty().withMessage('Product ID is required'),
-  body('personalInfo.fullName').notEmpty().withMessage('Full name is required'),
-  body('personalInfo.email').isEmail().withMessage('Valid email is required'),
-  body('personalInfo.phone').notEmpty().withMessage('Phone is required'),
-  body('financialInfo.monthlyIncome').isNumeric().withMessage('Monthly income must be a number'),
-  body('financialInfo.loanAmount').isNumeric().withMessage('Loan amount must be a number'),
-], async (req: AuthRequest, res: Response) => {
+router.post('/applications', authenticate, async (req: AuthRequest, res) => {
   try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-
     const application = new Application({
       userId: req.user!._id,
       ...req.body
@@ -32,8 +19,8 @@ router.post('/applications', authenticate, [
   }
 });
 
-// Get user's applications
-router.get('/applications', authenticate, async (req: AuthRequest, res: Response) => {
+// Get user applications
+router.get('/applications', authenticate, async (req: AuthRequest, res) => {
   try {
     const applications = await Application.find({ userId: req.user!._id })
       .populate('reviewedBy', 'name')
@@ -44,8 +31,8 @@ router.get('/applications', authenticate, async (req: AuthRequest, res: Response
   }
 });
 
-// Get specific application
-router.get('/applications/:id', authenticate, async (req: AuthRequest, res: Response) => {
+// Get application by ID
+router.get('/applications/:id', authenticate, async (req: AuthRequest, res) => {
   try {
     const application = await Application.findOne({
       _id: req.params.id,

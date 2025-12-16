@@ -4,81 +4,9 @@ import { motion, useInView } from "framer-motion"
 import { useRef, useState } from "react"
 import Link from "next/link"
 import { Calendar, Clock, User, ArrowRight, Search, Tag } from "lucide-react"
+import { blogPosts } from "@/lib/blog-data"
 
-const categories = ["All", "Personal Finance", "Home Loans", "Business", "Credit Score", "Investment", "Tax Planning"]
-
-const blogPosts = [
-  {
-    id: 1,
-    title: "10 Smart Ways to Improve Your Credit Score in 2024",
-    excerpt:
-      "Learn proven strategies to boost your credit score and unlock better loan rates. From payment habits to credit utilization, we cover it all.",
-    image: "/credit-score-improvement-tips.jpg",
-    category: "Credit Score",
-    author: "Priya Sharma",
-    date: "Dec 1, 2024",
-    readTime: "5 min read",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "Complete Guide to Home Loan Eligibility in India",
-    excerpt:
-      "Everything you need to know about home loan eligibility criteria, documentation, and how to maximize your approval chances.",
-    image: "/home-loan-guide-india.jpg",
-    category: "Home Loans",
-    author: "Rahul Verma",
-    date: "Nov 28, 2024",
-    readTime: "8 min read",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "Personal Loan vs Credit Card: Which is Right for You?",
-    excerpt:
-      "A comprehensive comparison to help you choose the right financing option based on your needs and financial situation.",
-    image: "/personal-loan-credit-card-comparison.jpg",
-    category: "Personal Finance",
-    author: "Anita Desai",
-    date: "Nov 25, 2024",
-    readTime: "6 min read",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "How to Start a Business with Limited Capital",
-    excerpt:
-      "Practical tips and financing options for aspiring entrepreneurs looking to launch their business journey.",
-    image: "/startup-entrepreneur.png",
-    category: "Business",
-    author: "Vikram Singh",
-    date: "Nov 22, 2024",
-    readTime: "7 min read",
-    featured: false,
-  },
-  {
-    id: 5,
-    title: "Tax Saving Strategies for Salaried Employees",
-    excerpt: "Maximize your tax savings with these legal and effective strategies designed for working professionals.",
-    image: "/tax-saving-strategies-india.jpg",
-    category: "Tax Planning",
-    author: "Neha Gupta",
-    date: "Nov 18, 2024",
-    readTime: "6 min read",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Investment Options for First-Time Investors",
-    excerpt: "A beginner's guide to various investment options in India, from mutual funds to fixed deposits.",
-    image: "/investment-options-beginners.jpg",
-    category: "Investment",
-    author: "Amit Kumar",
-    date: "Nov 15, 2024",
-    readTime: "9 min read",
-    featured: false,
-  },
-]
+const categories = ["All", "Personal Loans", "Home Loans", "Business Loans", "Credit Score", "Investment", "Tax Planning", "Insurance", "Digital Banking"]
 
 export default function BlogPage() {
   const headerRef = useRef<HTMLDivElement>(null)
@@ -90,12 +18,12 @@ export default function BlogPage() {
     const matchesCategory = activeCategory === "All" || post.category === activeCategory
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+      post.description.toLowerCase().includes(searchQuery.toLowerCase())
     return matchesCategory && matchesSearch
   })
 
-  const featuredPosts = filteredPosts.filter((post) => post.featured)
-  const regularPosts = filteredPosts.filter((post) => !post.featured)
+  const featuredPosts = filteredPosts.slice(0, 4)
+  const regularPosts = filteredPosts.slice(4)
 
   return (
     <main className="min-h-screen bg-white pt-24">
@@ -210,6 +138,7 @@ export default function BlogPage() {
                     <img
                       src={post.image || "/placeholder.svg"}
                       alt={post.title}
+                      title={post.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
@@ -219,22 +148,20 @@ export default function BlogPage() {
                     <span className="inline-block px-3 py-1 bg-[#12D6E7] text-white text-xs font-medium rounded-full mb-3">
                       {post.category}
                     </span>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[#12D6E7] transition-colors duration-300">
-                      {post.title}
-                    </h3>
-                    <p className="text-white/80 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
+                    <Link href={`/blog/${post.slug}`}>
+                      <h3 className="text-xl sm:text-2xl font-bold mb-3 group-hover:text-[#12D6E7] transition-colors duration-300">
+                        {post.title}
+                      </h3>
+                    </Link>
+                    <p className="text-white/80 text-sm mb-4 line-clamp-2">{post.description}</p>
                     <div className="flex items-center gap-4 text-sm text-white/70">
-                      <span className="flex items-center gap-1">
-                        <User className="w-4 h-4" />
-                        {post.author}
-                      </span>
                       <span className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
                         {post.date}
                       </span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
-                        {post.readTime}
+                        5 min read
                       </span>
                     </div>
                   </div>

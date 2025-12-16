@@ -6,65 +6,49 @@ import { ParallaxProvider } from "@/components/parallax-provider"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
+import { ChatSupportWidget } from "@/components/chat-support-widget"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: {
-    default: "FinoNest - Complete Financial Services Platform | Loans, Cards & Courses",
-    template: "%s | FinoNest"
-  },
-  description: "FinoNest offers comprehensive financial services including personal loans, home loans, business loans, credit cards, vehicle loans, education loans, car valuation tool, and digital marketing courses. Get instant approvals with competitive rates.",
-  keywords: "financial services, loans, credit cards, car valuation, digital marketing courses, finance courses, loan calculator, EMI calculator, instant loan approval",
-  authors: [{ name: "FinoNest Team" }],
-  creator: "FinoNest",
-  publisher: "FinoNest",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+  title: "Best Loan Provider in India | Finonest",
+  description: "Finonest offers a wide range of financial products including personal loans, home loans, and business loans.",
+  keywords: "loan, personal loan, home loan, business loan, financial services",
+  authors: [{ name: "Finonest Team" }],
+  publisher: "Finonest Financial Services",
   metadataBase: new URL('https://finonest.com'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://finonest.com/',
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://finonest.com',
-    title: 'FinoNest - Complete Financial Services Platform',
-    description: 'Comprehensive financial services including loans, credit cards, car valuation, and educational courses',
-    siteName: 'FinoNest',
+    locale: 'en_IN',
+    url: 'https://finonest.com/',
+    title: 'Best Loan Provider in India | Finonest',
+    description: 'Finonest offers a wide range of financial products including personal loans, home loans, and business loans.',
+    siteName: 'Finonest',
     images: [
       {
         url: '/logo.png',
         width: 1200,
         height: 630,
-        alt: 'FinoNest - Financial Services Platform',
+        alt: 'Finonest - Best Loan Provider in India',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FinoNest - Complete Financial Services Platform',
-    description: 'Comprehensive financial services including loans, credit cards, and courses',
+    title: 'Best Loan Provider in India | Finonest',
+    description: 'Finonest offers a wide range of financial products including personal loans, home loans, and business loans.',
     images: ['/logo.png'],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
 }
+
+export const dynamic = 'force-dynamic'
 
 export default function RootLayout({
   children,
@@ -90,6 +74,7 @@ export default function RootLayout({
             <Navigation />
             <main>{children}</main>
             <Footer />
+            <ChatSupportWidget />
             <Toaster />
           </ParallaxProvider>
         </ThemeProvider>
