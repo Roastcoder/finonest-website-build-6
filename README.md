@@ -1,6 +1,6 @@
-# Finonest - Complete MERN Financial Services Platform
+# Finonest - Next.js Frontend Application
 
-A comprehensive financial services platform with separate frontend (Next.js) and backend (Express.js) applications.
+A modern financial services platform frontend built with Next.js 16, TypeScript, and Tailwind CSS.
 
 ## 🏗️ Project Structure
 
@@ -14,17 +14,7 @@ finonest-website-build-6/
 │   ├── public/                   # Static assets
 │   ├── package.json              # Frontend dependencies
 │   └── .env.local                # Frontend environment variables
-├── backend/                      # Express.js Backend API
-│   ├── src/                      # TypeScript source code
-│   │   ├── config/               # Database and app configuration
-│   │   ├── controllers/          # Route controllers
-│   │   ├── models/               # MongoDB/Mongoose models
-│   │   ├── routes/               # API route definitions
-│   │   ├── middleware/           # Custom middleware
-│   │   └── index.ts              # Main server file
-│   ├── package.json              # Backend dependencies
-│   └── .env                      # Backend environment variables
-└── package.json                  # Root package.json for monorepo
+└── package.json                  # Root package.json
 ```
 
 ## 🚀 Quick Start
@@ -38,68 +28,33 @@ finonest-website-build-6/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Roastcoder/finonest-website-build-6.git
    cd finonest-website-build-6
    ```
 
-2. **Install all dependencies**
+2. **Install dependencies**
    ```bash
-   npm run install:all
+   cd frontend
+   npm install
    ```
 
 3. **Environment Setup**
    
-   **Frontend (.env.local):**
+   Create `.env.local` in the frontend directory:
    ```env
    NEXT_PUBLIC_API_URL=http://localhost:5000
    NEXT_PUBLIC_APP_URL=http://localhost:3000
    NEXT_PUBLIC_APP_NAME=Finonest
    ```
-   
-   **Backend (.env):**
-   ```env
-   NODE_ENV=development
-   PORT=5000
-   CLIENT_URL=http://localhost:3000
-   MONGODB_URI=mongodb://localhost:27017/finonest
-   JWT_SECRET=your_jwt_secret_key_here_make_it_very_long_and_secure
-   JWT_EXPIRE=7d
-   EMAIL_HOST=smtp.gmail.com
-   EMAIL_PORT=587
-   EMAIL_USER=your_email@gmail.com
-   EMAIL_PASS=your_email_password
-   ```
 
-4. **Start MongoDB**
+4. **Start Development Server**
    ```bash
-   # On macOS with Homebrew
-   brew services start mongodb-community
-   
-   # On Ubuntu/Debian
-   sudo systemctl start mongod
-   
-   # On Windows
-   net start MongoDB
-   ```
-
-5. **Start Development Servers**
-   ```bash
-   # Start both frontend and backend concurrently
    npm run dev
-   
-   # Or start individually
-   npm run dev:frontend  # Frontend only (http://localhost:3000)
-   npm run dev:backend   # Backend only (http://localhost:5000)
    ```
+   
+   The application will be available at `http://localhost:3000`
 
 ## 📦 Available Scripts
-
-### Root Level Commands
-- `npm run dev` - Start both frontend and backend in development mode
-- `npm run build` - Build both applications for production
-- `npm run start` - Start both applications in production mode
-- `npm run install:all` - Install dependencies for all packages
-- `npm run clean` - Clean all node_modules and build directories
 
 ### Frontend Commands (run from /frontend)
 - `npm run dev` - Start Next.js development server
@@ -107,41 +62,13 @@ finonest-website-build-6/
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-### Backend Commands (run from /backend)
-- `npm run dev` - Start Express server with nodemon
-- `npm run build` - Compile TypeScript to JavaScript
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+## 🔗 Backend API
 
-## 🔌 API Endpoints
+This frontend connects to the Finonest backend API. 
 
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `GET /api/auth/me` - Get current user
+**Backend Repository**: [finonest-backend](https://github.com/Roastcoder/finonest-backend)
 
-### Products
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by ID
-- `POST /api/products` - Create product (Admin only)
-- `PUT /api/products/:id` - Update product (Admin only)
-- `DELETE /api/products/:id` - Delete product (Admin only)
-
-### Applications
-- `POST /api/users/applications` - Submit application
-- `GET /api/users/applications` - Get user applications
-- `GET /api/admin/applications` - Get all applications (Admin/Manager/Employee)
-- `PUT /api/admin/applications/:id/status` - Update application status
-
-### Car Valuation
-- `POST /api/car-valuation` - Get car valuation
-- `POST /api/rc-lookup` - RC number lookup
-
-### Admin
-- `GET /api/admin/stats` - Dashboard statistics
-- `GET /api/admin/users` - Get all users
-- `PUT /api/admin/users/:id/role` - Update user role
+Make sure to run the backend server for full functionality.
 
 ## 🛠️ Tech Stack
 
@@ -153,15 +80,7 @@ finonest-website-build-6/
 - **Radix UI** - Headless component library
 - **Lucide React** - Icon library
 
-### Backend
-- **Express.js** - Node.js web framework
-- **TypeScript** - Type safety
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB ODM
-- **JWT** - Authentication tokens
-- **bcryptjs** - Password hashing
-- **Helmet** - Security headers
-- **CORS** - Cross-origin resource sharing
+
 
 ## 🔐 Security Features
 
@@ -183,13 +102,7 @@ finonest-website-build-6/
 - ⚡ Optimized performance
 - 🎨 Smooth animations
 
-### Backend Features
-- 🔐 Secure authentication
-- 👥 Role-based access control
-- 📊 RESTful API design
-- 🛡️ Security middleware
-- 📝 Application management
-- 🏪 Product management
+
 
 ### Products Available
 1. **Car Valuation** - AI-powered car value assessment
@@ -209,12 +122,7 @@ npm run build
 npm start
 ```
 
-### Backend Deployment
-```bash
-cd backend
-npm run build
-npm start
-```
+
 
 ### Environment Variables for Production
 Update the environment variables for production:
@@ -225,29 +133,21 @@ NEXT_PUBLIC_API_URL=https://api.yourdomain.com
 NEXT_PUBLIC_APP_URL=https://yourdomain.com
 ```
 
-**Backend:**
-```env
-NODE_ENV=production
-PORT=5000
-CLIENT_URL=https://yourdomain.com
-MONGODB_URI=mongodb://your-production-db-url
-JWT_SECRET=your-very-secure-jwt-secret
-```
+
 
 ## 🧪 Development
 
 ### Adding New Features
-1. Frontend changes go in `/frontend`
-2. Backend changes go in `/backend`
-3. Shared types can be created in both directories
-4. API calls from frontend should use the configured API_BASE_URL
+1. All frontend changes go in the `/frontend` directory
+2. API calls should use the configured `NEXT_PUBLIC_API_URL`
+3. Backend changes should be made in the separate backend repository
 
-### Database Models
-All MongoDB models are located in `/backend/src/models/`:
-- User.ts - User authentication and profiles
-- Product.ts - Financial products
-- Application.ts - Loan applications
-- SEOContent.ts - SEO content management
+### Backend Integration
+This frontend is designed to work with the Finonest Express.js backend API which handles:
+- User authentication and profiles
+- Financial products management
+- Loan applications processing
+- SEO content management
 
 ## 📝 License
 
