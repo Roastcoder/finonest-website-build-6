@@ -47,11 +47,7 @@ export default function SignupPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white flex items-center justify-center p-4">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md"
-      >
+      <div className="w-full max-w-md">
         <Card>
           <CardHeader className="text-center">
             <img src="/logo.png" alt="FinoNest" className="h-12 mx-auto mb-4" />
@@ -130,7 +126,7 @@ export default function SignupPage() {
             </div>
           </CardContent>
         </Card>
-      </motion.div>
+      </div>
     </div>
   )
 }
